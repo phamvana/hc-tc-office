@@ -29,16 +29,17 @@ Roadmap được sử dụng để:
 
 | Phase    | Nội dung                       | Trạng thái     |
 | -------- | ------------------------------ | -------------- |
-| Phase 0  | Project Foundation             | 🟡 IN PROGRESS |
-| Phase 1  | Leadership Schedule            | ⬜ TODO        |
-| Phase 2  | Authentication & Authorization | ⬜ TODO        |
-| Phase 3  | Work Management                | ⬜ TODO        |
-| Phase 4  | Personal Todo                  | ⬜ TODO        |
-| Phase 5  | Work Orders                    | ⬜ TODO        |
-| Phase 6  | Vehicle Dispatch               | ⬜ TODO        |
-| Phase 7  | Human Resources                | ⬜ TODO        |
-| Phase 8  | HC-TC Requirements Survey      | ⬜ TODO        |
-| Phase 9  | Backend                        | ⬜ TODO        |
-| Phase 10 | Frontend–Backend Integration   | ⬜ TODO        |
-| Phase 11 | Testing                        | ⬜ TODO        |
-| Phase 12 | Deployment                     | ⬜ TODO        |
+| Phase 0  | Project Foundation             | 🟢 PASS        |
+| Phase 1  | UI Foundation                  | 🟡 IN PROGRESS |
+| Phase 2  | Leadership Schedule            | ⬜ TODO        |
+| Phase 3  | Authentication & Authorization | ⬜ TODO        |
+| Phase 4  | Work Management                | ⬜ TODO        |
+| Phase 5  | Personal Todo                  | ⬜ TODO        |
+| Phase 6  | Work Orders                    | ⬜ TODO        |
+| Phase 7  | Vehicle Dispatch               | ⬜ TODO        |
+| Phase 8  | Human Resources                | ⬜ TODO        |
+| Phase 9  | HC-TC Requirements Survey      | ⬜ TODO        |
+| Phase 10 | Backend                        | ⬜ TODO        |
+| Phase 11 | Frontend–Backend Integration   | ⬜ TODO        |
+| Phase 12 | Testing                        | ⬜ TODO        |
+| Phase 13 | Deployment                     | ⬜ TODO        |

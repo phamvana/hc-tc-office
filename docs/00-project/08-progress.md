@@ -451,6 +451,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-09-16 | TASK-03 | IN PROGRESS | PASS        | Git/GitHub workflow đạt                                                      |
 | 2026-09-16 | TASK-04 | TODO        | IN PROGRESS | Bắt đầu xây dựng Project Documentation                                       |
 | 2026-09-23 | TASK-04 | IN PROGRESS | PASS        | Hoàn thành Documentation, Review, Lint, Build, Git Commit và Progress Update |
+| 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                     |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -602,30 +603,31 @@ Desired Progress
 ## Phase hiện tại
 
 ```text
-Phase 0 — Project Foundation
+Phase 1 — UI Foundation
+
 Status: 🟡 IN PROGRESS
 ```
 
 ## Current TASK
 
 ```text
-TASK-04 — Documentation
-Status: 🟢 PASS
-Commit: 46daa39
+TASK-05 — Layout
+Status: 🟡 IN PROGRESS
+
 ```
 
 ## Last Completed TASK
 
 ```text
-TASK-03 — Git + GitHub
+TASK-04 — Documentation
 Status: 🟢 PASS
-Commit: 891dfdf
+Commit: f041c95
 ```
 
 ## Next TASK
 
 ```text
-TASK-05 — Layout
+TASK-06 — Components
 Status: ⬜ TODO
 ```
 
