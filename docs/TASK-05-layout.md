@@ -1,50 +1,39 @@
 # TASK-05 — Layout
 
-> Hồ sơ kỹ thuật, học tập và theo dõi quá trình thực hiện TASK-05 của dự án `hc-tc-office`.
+> Xây dựng nền tảng Layout cho ứng dụng `hc-tc-office`.
 
 ---
 
 ## 1. Thông tin TASK
 
-| Thuộc tính      | Nội dung                                         |
-| --------------- | ------------------------------------------------ |
-| TASK ID         | TASK-05                                          |
-| Tên TASK        | Layout                                           |
-| Phase           | Phase 1 — UI Foundation                          |
-| Status          | 🟡 IN PROGRESS                                   |
-| Ngày bắt đầu    | 2026-09-23                                       |
-| Ngày hoàn thành | Chưa hoàn thành                                  |
-| Phụ thuộc       | TASK-01, TASK-02, TASK-03, TASK-04               |
-| Người thực hiện | Phạm Văn Á + AI Mentor                           |
-| Branch          | `main`                                           |
-| Commit          | Chưa có                                          |
-| Scope           | Xây dựng nền tảng Layout dùng chung cho ứng dụng |
+| Thuộc tính     | Nội dung                                     |
+| -------------- | -------------------------------------------- |
+| TASK ID        | TASK-05                                      |
+| Tên TASK       | Layout Foundation                            |
+| Phase          | Phase 1 — UI Foundation                      |
+| Trạng thái     | 🟡 IN PROGRESS                               |
+| Ngày bắt đầu   | 2026-09-23                                   |
+| Mục tiêu chính | Xây dựng cấu trúc Layout cơ bản cho ứng dụng |
+| Công nghệ      | React + TypeScript + Vite + Tailwind CSS     |
 
 ---
 
-# 2. Bối cảnh
+## 2. Context
 
-Các TASK-01 đến TASK-04 đã hoàn thành nền tảng ban đầu của dự án:
+Sau khi hoàn thành:
 
-- Khởi tạo React + TypeScript + Vite.
-- Chuẩn hóa cấu trúc thư mục.
-- Thiết lập Git và GitHub.
-- Xây dựng Project Documentation.
-- Thiết lập quy trình quản lý TASK, Progress, Git và Documentation.
+- TASK-01 — Khởi tạo project
+- TASK-02 — Chuẩn hóa cấu trúc project
+- TASK-03 — Git + GitHub
+- TASK-04 — Documentation
 
-TASK-05 là bước chuyển từ **Project Foundation** sang **UI Foundation**.
+Dự án chuyển sang Phase 1 — UI Foundation.
 
-TASK-05 bắt đầu xây dựng cấu trúc giao diện dùng chung cho ứng dụng.
+TASK-05 tập trung xây dựng nền tảng giao diện bằng Layout và Component.
 
 ---
 
-# 3. Phân loại Phase
-
-## Phase 0 — Project Foundation
-
-Phase 0 tập trung vào việc thiết lập và quản lý nền tảng dự án.
-
-Các TASK đã hoàn thành:
+## 3. Phase 0 đã hoàn thành
 
 | TASK    | Nội dung                           | Status  |
 | ------- | ---------------------------------- | ------- |
@@ -53,108 +42,73 @@ Các TASK đã hoàn thành:
 | TASK-03 | Git + GitHub                       | 🟢 PASS |
 | TASK-04 | Documentation                      | 🟢 PASS |
 
-## Phase 1 — UI Foundation
+---
 
-TASK-05 thuộc Phase 1 vì bắt đầu xây dựng nền tảng giao diện ứng dụng.
+## 4. Mục tiêu TASK-05
 
-### TASK-05 — Layout
+Sau khi hoàn thành TASK-05, người học phải:
 
-Mục tiêu:
-
-> Xây dựng Layout dùng chung và hiểu bản chất của Layout trong React trước khi phát triển các giao diện nghiệp vụ.
+1. Hiểu Layout là gì.
+2. Phân biệt Layout và Page.
+3. Hiểu Component Composition.
+4. Hiểu `children` trong React.
+5. Biết sử dụng `ReactNode`.
+6. Xây dựng được `MainLayout`.
+7. Tách `Header`, `Sidebar`, `MainContent`.
+8. Biết tích hợp Layout vào `App`.
+9. Kiểm tra bằng ESLint.
+10. Kiểm tra bằng production build.
+11. Cập nhật documentation.
+12. Commit và push lên GitHub.
 
 ---
 
-# 4. Mục tiêu
+## 5. Phạm vi
 
-TASK-05 có hai mục tiêu song song.
+### In Scope
 
-## 4.1. Mục tiêu kỹ thuật
+- Học Component.
+- Học Props.
+- Học `children`.
+- Học Layout.
+- Học Page.
+- Thiết kế Component Tree.
+- Tạo `Header`.
+- Tạo `Sidebar`.
+- Tạo `MainContent`.
+- Tạo `MainLayout`.
+- Tích hợp Layout vào `App`.
+- Kiểm tra ESLint.
+- Kiểm tra build.
+- Cập nhật documentation.
+- Commit.
+- Push GitHub.
 
-Xây dựng được một Layout cơ bản có khả năng:
+### Out of Scope
 
-- Cung cấp khung giao diện chung.
-- Nhận nội dung từ bên ngoài thông qua `children`.
-- Hiển thị nội dung bên trong vùng Main Content.
-- Có cấu trúc rõ ràng để mở rộng trong các TASK sau.
+TASK-05 chưa thực hiện:
 
-## 4.2. Mục tiêu học tập
-
-Sau TASK-05, người học phải hiểu:
-
-- Layout là gì.
-- Page là gì.
-- Component là gì.
-- Component cha và component con.
-- Props là gì.
-- `children` là gì.
-- Vì sao Layout sử dụng `children`.
-- Layout khác Page như thế nào.
-- Vì sao không nên đưa toàn bộ giao diện vào một component duy nhất.
-
----
-
-# 5. Phạm vi
-
-## 5.1. Trong phạm vi
-
-TASK-05 bao gồm:
-
-1. Tìm hiểu khái niệm Layout.
-2. Tìm hiểu `children`.
-3. Xác định cấu trúc Layout của ứng dụng.
-4. Tạo Layout component cơ bản.
-5. Truyền nội dung vào Layout thông qua `children`.
-6. Tạo Page/component thử nghiệm để kiểm tra Layout.
-7. Kiểm tra TypeScript.
-8. Kiểm tra ESLint.
-9. Kiểm tra Build.
-10. Cập nhật Documentation.
-11. Ghi nhận Issues.
-12. Ghi nhận Lessons.
-13. Ghi nhận Decisions.
-14. Cập nhật Progress.
-15. Commit.
-16. Push GitHub.
-17. Kiểm tra Working Tree.
-
----
-
-# 6. Ngoài phạm vi
-
-Các nội dung sau **không thuộc TASK-05**:
-
-- React Router.
-- Routing hoàn chỉnh.
+- Routing.
 - Authentication.
 - Authorization.
-- Login.
-- Role-based access control.
-- API.
 - Database.
-- Backend.
-- Dashboard nghiệp vụ.
+- API.
+- Calendar.
+- Todo.
+- Công lệnh.
+- Điều xe.
 - Quản lý nhân sự.
-- Quản lý lịch công tác.
-- Quản lý công việc.
-- Sidebar nghiệp vụ hoàn chỉnh.
-- Header nghiệp vụ hoàn chỉnh.
+- Responsive hoàn chỉnh.
 - Design System hoàn chỉnh.
-- Responsive Design hoàn chỉnh.
-- State Management.
-- Global State.
-- API State.
-- Deployment.
-
-Nếu phát sinh yêu cầu thuộc các nội dung trên, phải ghi nhận và đưa sang TASK/Phase phù hợp thay vì tự mở rộng TASK-05.
+- State management.
 
 ---
 
-# 7. Kiến thức nền cần đạt
+## 6. Kiến thức cần nắm
 
-## 7.1. Component
+### 6.1 Component
 
-Component là đơn vị xây dựng giao diện có thể được sử dụng và tổ chức độc lập.
+Component là một đơn vị giao diện có thể tái sử dụng.
 
 Ví dụ:
 
@@ -166,242 +120,267 @@ function Header() {
 
 ---
 
-## 7.2. Props
+### 6.2 Props
 
 Props là dữ liệu được truyền từ component cha xuống component con.
 
 Ví dụ:
 
 ```tsx
-function Greeting({ name }) {
-  return <h1>Xin chào {name}</h1>;
-}
+type HeaderProps = {
+  title: string;
+};
 ```
 
-Sử dụng:
-
-```tsx
-<Greeting name="Á" />
-```
+TASK-05 chưa cần truyền Props cho `Header` và `Sidebar` vì chưa có nhu cầu thực tế.
 
 ---
 
-## 7.3. Children
+### 6.3 children
 
-`children` là nội dung được đặt bên trong component khi component đó được sử dụng.
+`children` là nội dung được truyền vào bên trong component.
 
 Ví dụ:
 
 ```tsx
-<MainLayout>
-  <h1>Dashboard</h1>
-</MainLayout>
+<MainContent>
+  <Dashboard />
+</MainContent>
 ```
 
-Trong `MainLayout`, phần:
+Trong component:
 
 ```tsx
-{
-  children;
-}
-```
-
-sẽ nhận:
-
-```tsx
-<h1>Dashboard</h1>
-```
-
-Mô hình:
-
-```text
-MainLayout
-    │
-    └── children
-           │
-           └── Dashboard
+type MainContentProps = {
+  children: ReactNode;
+};
 ```
 
 ---
 
-# 8. Khái niệm Layout
+### 6.4 ReactNode
 
-Layout là cấu trúc giao diện dùng chung cho nhiều Page.
+`ReactNode` biểu diễn nội dung mà React có thể render.
+
+Ví dụ:
+
+```tsx
+import type { ReactNode } from "react";
+```
+
+---
+
+## 7. Layout là gì?
+
+Layout là cấu trúc khung giao diện dùng chung cho nhiều Page.
 
 Ví dụ:
 
 ```text
-                 MainLayout
-                     │
-          ┌──────────┼──────────┐
-          │          │          │
-        Header     Sidebar     Main
-                                │
-                         ┌──────┴──────┐
-                         │             │
-                    Dashboard     WorkCalendar
+┌──────────────────────────────┐
+│            Header            │
+├──────────┬───────────────────┤
+│          │                   │
+│ Sidebar  │    MainContent    │
+│          │                   │
+│          │                   │
+└──────────┴───────────────────┘
 ```
 
-Layout quản lý phần khung chung.
-
-Page quản lý nội dung riêng của từng màn hình.
+Layout không phải là nội dung nghiệp vụ cụ thể.
 
 ---
 
-# 9. Layout và Page
+## 8. Layout và Page
 
-## Layout
+### Layout
 
-Chịu trách nhiệm về:
+Chịu trách nhiệm về cấu trúc chung:
 
-- Khung giao diện.
-- Vùng Header.
-- Vùng Navigation/Sidebar.
-- Vùng Main Content.
-- Các thành phần dùng chung.
+- Header
+- Sidebar
+- MainContent
+- Footer nếu có
 
-## Page
+### Page
 
-Chịu trách nhiệm về:
+Chịu trách nhiệm về nội dung của một màn hình cụ thể.
 
-- Nội dung của một màn hình.
-- Dữ liệu và UI của chức năng cụ thể.
-- Nội dung được hiển thị trong Layout.
-
-Mối quan hệ:
-
-```text
-Layout
-   │
-   └── Page
-```
-
-Không nên trộn hai trách nhiệm này thành một component duy nhất.
-
----
-
-# 10. Thiết kế dự kiến
-
-Cấu trúc dự kiến:
-
-```text
-src/
-├── components/
-├── hooks/
-├── layouts/
-│   └── MainLayout.tsx
-├── pages/
-├── services/
-└── types/
-```
-
-Trong TASK-05, Layout chỉ cần đạt mức nền tảng.
-
-Không cố gắng xây dựng toàn bộ giao diện ứng dụng ngay trong TASK này.
-
----
-
-# 11. Cấu trúc Layout dự kiến
-
-Mô hình khái niệm:
+Ví dụ:
 
 ```text
 MainLayout
 │
 ├── Header
-│
 ├── Sidebar
+└── MainContent
+    ├── DashboardPage
+    ├── CalendarPage
+    └── TodoPage
+```
+
+---
+
+## 9. Component Composition
+
+React cho phép xây dựng component lớn từ nhiều component nhỏ.
+
+Ví dụ:
+
+```text
+MainLayout
+├── Header
+├── Sidebar
+└── MainContent
+```
+
+Mỗi component có trách nhiệm riêng.
+
+Lợi ích:
+
+- Dễ đọc.
+- Dễ bảo trì.
+- Dễ tái sử dụng.
+- Dễ mở rộng.
+- Giảm component quá lớn.
+
+---
+
+## 10. Cấu trúc component
+
+Cấu trúc được thống nhất cho TASK-05:
+
+```text
+App
+└── MainLayout
+    ├── Header
+    ├── Sidebar
+    └── MainContent
+        └── children
+            └── Page/component content
+```
+
+---
+
+## 11. File structure
+
+Các file chính:
+
+```text
+src/
+├── components/
+│   ├── Header.tsx
+│   └── Sidebar.tsx
 │
-└── Main Content
-       │
-       └── children
+├── layouts/
+│   ├── MainContent.tsx
+│   └── MainLayout.tsx
+│
+└── App.tsx
 ```
 
-Ở giai đoạn đầu, Header và Sidebar có thể chỉ là các vùng giao diện tối giản để chứng minh cấu trúc Layout hoạt động.
+---
 
-Các thành phần hoàn chỉnh sẽ được xem xét trong những TASK tiếp theo.
+## 12. Subtasks
+
+| Subtask | Nội dung                                            | Status     |
+| ------- | --------------------------------------------------- | ---------- |
+| 05.1    | Khởi động TASK-05 và cập nhật Progress              | 🟢 PASS    |
+| 05.2    | Học bản chất Component, Props, Layout và `children` | 🟢 PASS    |
+| 05.3    | Thiết kế cấu trúc `MainLayout`                      | 🟢 PASS    |
+| 05.4    | Implement `MainLayout` cơ bản                       | 🟢 PASS    |
+| 05.5    | Tạo Page/component thử nghiệm                       | 🟢 PASS    |
+| 05.6    | Review TypeScript và ESLint                         | 🟢 PASS    |
+| 05.7    | Build và kiểm thử                                   | 🟢 PASS    |
+| 05.8    | Documentation và Progress Update                    | 🟢 PASS    |
+| 05.9    | Commit TASK-05                                      | ⬜ Pending |
+| 05.10   | Push GitHub và Final Review                         | ⬜ Pending |
 
 ---
 
-# 12. Subtask
+## 13. Quy trình thực hiện
 
-| Subtask | Nội dung                               | Status         |
-| ------- | -------------------------------------- | -------------- |
-| 05.1    | Khởi động TASK-05 và cập nhật Progress | 🟡 In Progress |
-| 05.2    | Học bản chất Layout và `children`      | ⬜ Pending     |
-| 05.3    | Thiết kế cấu trúc `MainLayout`         | ⬜ Pending     |
-| 05.4    | Implement `MainLayout` cơ bản          | ⬜ Pending     |
-| 05.5    | Tạo Page/component thử nghiệm          | ⬜ Pending     |
-| 05.6    | Review TypeScript và ESLint            | ⬜ Pending     |
-| 05.7    | Build và kiểm thử                      | ⬜ Pending     |
-| 05.8    | Documentation và Progress Update       | ⬜ Pending     |
-| 05.9    | Commit TASK-05                         | ⬜ Pending     |
-| 05.10   | Push GitHub và Final Review            | ⬜ Pending     |
-
-> Chỉ thay đổi trạng thái Subtask sau khi công việc thực sự hoàn thành.
-
----
-
-# 13. Quy trình thực hiện
-
-TASK-05 tuân thủ workflow:
+TASK-05 được thực hiện theo nguyên tắc:
 
 ```text
-Hiểu kiến thức
-      ↓
-Xác định phạm vi
-      ↓
+Hiểu
+  ↓
 Thiết kế
-      ↓
+  ↓
 Implement
-      ↓
-Kiểm tra
-      ↓
-Review
-      ↓
+  ↓
+Review code
+  ↓
+Lint
+  ↓
+Build
+  ↓
+Browser verification
+  ↓
 Documentation
-      ↓
-Git Review
-      ↓
+  ↓
 Commit
-      ↓
-Progress Update
-      ↓
-Xác lập PASS
-      ↓
-Push GitHub
-      ↓
-Final Verification
+  ↓
+Push
+  ↓
+Final Review
 ```
 
-Không bỏ qua bước chỉ vì thay đổi nhỏ.
+Không chuyển sang TASK tiếp theo khi TASK-05 chưa đạt điều kiện PASS.
 
 ---
 
-# 14. Acceptance Criteria
+## 14. Acceptance Criteria
 
-TASK-05 chỉ được xác lập `🟢 PASS` khi tất cả điều kiện sau đạt.
+TASK-05 chỉ được PASS khi:
 
-## AC-01 — Layout hoạt động
+### Knowledge
 
-Có Layout component hoạt động thực tế.
+- [x] Hiểu Component.
+- [x] Hiểu Props.
+- [x] Hiểu `children`.
+- [x] Hiểu `ReactNode`.
+- [x] Hiểu Layout.
+- [x] Phân biệt Layout và Page.
+- [x] Hiểu Component Composition.
 
-## AC-02 — `children`
+### Implementation
 
-Layout nhận và hiển thị được nội dung thông qua `children`.
+- [x] Có `Header`.
+- [x] Có `Sidebar`.
+- [x] Có `MainContent`.
+- [x] Có `MainLayout`.
+- [x] `MainLayout` sử dụng `children`.
+- [x] `MainContent` sử dụng `children`.
+- [x] `App` sử dụng `MainLayout`.
 
-## AC-03 — Phân tách trách nhiệm
+### Quality
 
-Có sự phân biệt rõ ràng giữa:
+- [x] ESLint đạt.
+- [x] Production build đạt.
+- [x] Browser verification đạt.
+- [x] Không có lỗi TypeScript liên quan đến TASK-05.
 
-- Layout.
-- Page/component nội dung.
+### Documentation
 
-## AC-04 — TypeScript
+- [x] TASK-05 document được cập nhật.
+- [x] Lessons được ghi nhận.
+- [x] Decisions được ghi nhận.
+- [x] Progress được cập nhật.
+- [x] Review Log được cập nhật.
 
-Code không có TypeScript error.
+### Git
 
-## AC-05 — ESLint
+- [ ] Git review đạt.
+- [ ] Commit đạt.
+- [ ] Push GitHub đạt.
+- [ ] Working Tree clean.
+
+---
+
+## 15. Kiểm thử
+
+### 15.1 ESLint
 
 Lệnh:
 
@@ -409,9 +388,15 @@ Lệnh:
 npm run lint
 ```
 
-phải thành công.
+Kết quả:
 
-## AC-06 — Build
+```text
+PASS
+```
+
+---
+
+### 15.2 Production Build
 
 Lệnh:
 
@@ -419,383 +404,267 @@ Lệnh:
 npm run build
 ```
 
-phải thành công.
-
-## AC-07 — Scope
-
-Không đưa các chức năng ngoài phạm vi vào TASK-05.
-
-## AC-08 — Documentation
-
-TASK document được cập nhật đầy đủ.
-
-## AC-09 — Progress
-
-`08-progress.md` phản ánh đúng trạng thái thực tế.
-
-## AC-10 — Git
-
-Có commit mô tả đúng nội dung thay đổi.
-
-## AC-11 — GitHub
-
-Commit được push thành công lên GitHub.
-
-## AC-12 — Working Tree
-
-Sau khi hoàn thành:
+Kết quả:
 
 ```text
-nothing to commit, working tree clean
-```
-
-## AC-13 — Knowledge
-
-Người học có thể tự giải thích:
-
-1. Layout là gì?
-2. Page là gì?
-3. Layout khác Page như thế nào?
-4. Props là gì?
-5. `children` là gì?
-6. Vì sao Layout sử dụng `children`?
-7. Component cha và component con tương tác như thế nào?
-
----
-
-# 15. Test / Verification
-
-## 15.1. Development Test
-
-Kiểm tra ứng dụng bằng development server:
-
-```powershell
-npm run dev
-```
-
-Kiểm tra:
-
-- Layout hiển thị.
-- Nội dung `children` hiển thị.
-- Không có lỗi Runtime.
-
-## 15.2. Lint Test
-
-```powershell
-npm run lint
-```
-
-Expected:
-
-```text
-No ESLint errors
-```
-
-## 15.3. Build Test
-
-```powershell
-npm run build
-```
-
-Expected:
-
-```text
-Build completed successfully
-```
-
-## 15.4. Git Test
-
-```powershell
-git status
-```
-
-Expected sau khi hoàn thành:
-
-```text
-nothing to commit, working tree clean
+PASS
 ```
 
 ---
 
-# 16. Issues — Các vấn đề phát sinh
+### 15.3 Browser Verification
 
-> Chỉ ghi các vấn đề có giá trị kỹ thuật, học tập hoặc ảnh hưởng đến quy trình.
+Đã kiểm tra trên trình duyệt:
 
-## ISSUE-001
+- Header hiển thị.
+- Sidebar hiển thị.
+- MainContent hiển thị.
+- MainLayout hoạt động.
+- Component Tree hoạt động.
+- `children` hoạt động.
 
-**Status:** ⬜ Chưa ghi nhận
+Kết quả:
 
-**Loại:** -
-
-**Ngày:** -
-
-**Hiện tượng:**
-
-- **Nguyên nhân:**
-
-- **Cách xử lý:**
-
-- **Kết quả:**
-
-- **Bài học:**
-
-- ***
-
-# 17. Lessons — Bài học rút ra
-
-Phần này ghi lại các kiến thức quan trọng thu được trong quá trình thực hiện.
-
-## LESSON-001 — Layout và Page
-
-**Status:** 🟡 Đang học
-
-Layout chịu trách nhiệm về khung giao diện dùng chung.
-
-Page chịu trách nhiệm về nội dung của một màn hình cụ thể.
+```text
+PASS
+```
 
 ---
 
-## LESSON-002 — `children`
+## 16. Issues
 
-**Status:** 🟡 Đang học
+### ISSUE-001 — PowerShell hiển thị tiếng Việt không chính xác
 
-`children` cho phép component nhận nội dung được đặt bên trong component đó.
+**Mô tả:**
+
+Một số nội dung tiếng Việt hiển thị không chính xác khi xem trực tiếp bằng PowerShell.
+
+**Nguyên nhân:**
+
+Vấn đề nằm ở cách PowerShell hiển thị encoding, không phải lỗi TypeScript hoặc lỗi UTF-8 của file.
+
+**Cách xác minh:**
+
+File được kiểm tra bằng VS Code/Python và nội dung UTF-8 vẫn đúng.
+
+**Status:**
+
+🟢 Resolved
+
+**Bài học:**
+
+Không nên kết luận file bị lỗi encoding chỉ dựa trên việc PowerShell hiển thị tiếng Việt không đúng.
+
+---
+
+## 17. Lessons Learned
+
+### Lesson 01 — Layout và Page khác nhau
+
+Layout cung cấp cấu trúc dùng chung.
+
+Page cung cấp nội dung nghiệp vụ cụ thể.
+
+---
+
+### Lesson 02 — `children`
+
+`children` cho phép component cha chứa nội dung linh hoạt từ component bên ngoài.
 
 Ví dụ:
 
 ```tsx
-<MainLayout>
+<MainContent>
   <Dashboard />
-</MainLayout>
+</MainContent>
 ```
 
-`Dashboard` được truyền vào `MainLayout` thông qua `children`.
-
 ---
 
-## LESSON-003 — Component Composition
+### Lesson 03 — Component Composition
 
-**Status:** ⬜ Pending
+Một giao diện lớn nên được chia thành các component có trách nhiệm rõ ràng.
 
-Ghi nhận sau khi thực hành.
-
----
-
-# 18. Decisions — Quyết định kỹ thuật
-
-## DECISION-001 — TASK-05 thuộc Phase 1
-
-**Ngày:** 2026-09-23
-
-**Quyết định:**
-
-TASK-05 — Layout được xếp vào:
+Ví dụ:
 
 ```text
-Phase 1 — UI Foundation
+MainLayout
+├── Header
+├── Sidebar
+└── MainContent
 ```
-
-**Lý do:**
-
-TASK-01 đến TASK-04 tập trung vào Project Foundation.
-
-TASK-05 bắt đầu xây dựng cấu trúc giao diện ứng dụng nên thuộc UI Foundation.
-
-**Ảnh hưởng:**
-
-Cần bảo đảm các tài liệu sau thống nhất:
-
-- `03-roadmap.md`
-- `08-progress.md`
-- TASK-05 document
 
 ---
 
-## DECISION-002 — Tách hồ sơ riêng cho từng TASK
+## 18. Decisions
 
-**Ngày:** 2026-09-23
+### DECISION-001
 
-**Quyết định:**
+TASK-05 thuộc Phase 1 — UI Foundation.
 
-Mỗi TASK có một file:
+### DECISION-002
+
+Mỗi TASK có một file documentation riêng.
+
+### DECISION-003
+
+Tách riêng:
 
 ```text
-TASK-XX-*.md
+components/
+layouts/
 ```
 
-**Lý do:**
+để phân biệt component giao diện và component cấu trúc Layout.
 
-- Dễ tra cứu.
-- Theo dõi được quá trình thực hiện.
-- Ghi lại Issues.
-- Ghi lại Lessons.
-- Ghi lại Decisions.
-- Ghi lại Git History.
-- Có thể dùng làm tài liệu học tập lâu dài.
+### DECISION-004
 
-`08-progress.md` chỉ giữ vai trò Dashboard tổng quan.
+`MainLayout` và `MainContent` sử dụng:
 
----
+```tsx
+children: ReactNode;
+```
 
-# 19. Scope Change Log
+### DECISION-005
 
-Mọi thay đổi phạm vi phải được ghi nhận.
+`Header` và `Sidebar` chưa sử dụng Props vì hiện tại chưa có nhu cầu truyền dữ liệu.
 
-## CHANGE-001 — TASK-05 chuyển sang Phase 1
-
-**Ngày:** 2026-09-23
-
-**Trạng thái:** 🟢 Accepted
-
-**Nội dung:**
-
-Ban đầu TASK-05 được dự kiến tiếp nối trong Phase 0.
-
-Sau khi review lại mục tiêu của Phase 0, xác định TASK-05 bắt đầu xây dựng UI Foundation nên chuyển sang Phase 1.
-
-**Lý do:**
-
-Phase 0 tập trung vào Project Foundation.
-
-Phase 1 tập trung vào UI Foundation.
-
-**Ảnh hưởng:**
-
-Cần cập nhật:
-
-- Roadmap.
-- Progress.
-- TASK documentation.
+Không over-engineering ở giai đoạn này.
 
 ---
 
-# 20. Git History
+## 19. Scope Change Log
 
-Ghi lại các commit quan trọng liên quan đến TASK.
+| Nội dung    | Thay đổi         | Lý do                                 |
+| ----------- | ---------------- | ------------------------------------- |
+| Header      | Không dùng Props | Chưa có nhu cầu                       |
+| Sidebar     | Không dùng Props | Chưa có nhu cầu                       |
+| MainLayout  | Dùng `children`  | Cho phép chứa nội dung Page linh hoạt |
+| MainContent | Dùng `children`  | Tách vùng nội dung khỏi Layout        |
 
-| Commit  | Nội dung         | Trạng thái     |
-| ------- | ---------------- | -------------- |
-| Chưa có | Khởi tạo TASK-05 | 🟡 In Progress |
-
-Sau khi commit, cập nhật bảng này.
-
----
-
-# 21. Progress History
-
-| Ngày       | Nội dung                       | Trạng thái  |
-| ---------- | ------------------------------ | ----------- |
-| 2026-09-23 | Bắt đầu TASK-05                | 🟢 Recorded |
-| 2026-09-23 | Xác định TASK-05 thuộc Phase 1 | 🟢 Recorded |
-
-Các thay đổi trạng thái tiếp theo phải được bổ sung, không xóa lịch sử cũ.
+Không có scope change lớn.
 
 ---
 
-# 22. Review Log
+## 20. Git History
 
-## Initial Review
-
-**Ngày:** 2026-09-23
-
-**Kết quả:**
-
-- Scope được xác định.
-- Acceptance Criteria được xác định.
-- TASK được phân loại vào Phase 1.
-- Chưa triển khai code.
-- Chưa có commit TASK-05.
-
-**Status:** 🟢 Ready for implementation
+| Commit    | Nội dung                                 | Trạng thái |
+| --------- | ---------------------------------------- | ---------- |
+| `605af03` | `docs(task-05): start layout foundation` | 🟢 Pushed  |
 
 ---
 
-## Final Review
+## 21. Progress History
 
-> Chỉ hoàn thành phần này khi TASK-05 thực sự kết thúc.
+| Ngày       | Nội dung                                                                             | Trạng thái  |
+| ---------- | ------------------------------------------------------------------------------------ | ----------- |
+| 2026-09-23 | Bắt đầu TASK-05                                                                      | 🟢 Recorded |
+| 2026-09-23 | Xác định TASK-05 thuộc Phase 1                                                       | 🟢 Recorded |
+| 2026-09-23 | Hoàn thành TASK-05.1 — khởi động TASK và cập nhật Progress                           | 🟢 PASS     |
+| 2026-09-25 | Hoàn thành phần học Component, Props, `children`, Layout và Page                     | 🟢 PASS     |
+| 2026-09-25 | Hoàn thành thiết kế Component Tree: `MainLayout`, `Header`, `Sidebar`, `MainContent` | 🟢 PASS     |
+| 2026-09-26 | Implement `Header`, `Sidebar`, `MainContent`, `MainLayout` và tích hợp vào `App`     | 🟢 PASS     |
+| 2026-09-26 | `npm run lint` đạt                                                                   | 🟢 PASS     |
+| 2026-09-26 | `npm run build` đạt                                                                  | 🟢 PASS     |
+| 2026-09-26 | Browser verification xác nhận Component Tree và `children` hoạt động                 | 🟢 PASS     |
+| 2026-09-27 | Hoàn thiện hồ sơ TASK-05.2: Lessons, Decisions, Progress và Review Log               | 🟢 PASS     |
 
-### Knowledge
+---
 
-- [ ] Hiểu Layout
-- [ ] Hiểu Page
-- [ ] Hiểu Props
-- [ ] Hiểu `children`
-- [ ] Hiểu Component Composition
+## 22. Review Log
 
-### Implementation
+### Review 01 — Knowledge
 
-- [ ] MainLayout hoạt động
-- [ ] `children` hoạt động
-- [ ] Page/component thử nghiệm hoạt động
-- [ ] Không có code ngoài scope
+Đã kiểm tra:
 
-### Quality
+- Component.
+- Props.
+- `children`.
+- `ReactNode`.
+- Layout.
+- Page.
+- Component Composition.
 
-- [ ] TypeScript đạt
-- [ ] ESLint đạt
-- [ ] Build đạt
-- [ ] Runtime test đạt
+**Kết quả:** 🟢 PASS
 
-### Documentation
+---
 
-- [ ] TASK document hoàn chỉnh
-- [ ] Issues được ghi nhận
-- [ ] Lessons được ghi nhận
-- [ ] Decisions được ghi nhận
-- [ ] Scope changes được ghi nhận
-- [ ] Progress được cập nhật
+### Review 02 — Implementation
 
-### Git
-
-- [ ] Git review đạt
-- [ ] Commit đạt
-- [ ] Push GitHub đạt
-- [ ] Working Tree clean
-
-### Final Status
+Đã kiểm tra:
 
 ```text
-TASK-05 — Layout
-Status: ⬜ PENDING
+App
+└── MainLayout
+    ├── Header
+    ├── Sidebar
+    └── MainContent
 ```
 
-Chỉ đổi thành:
-
-```text
-TASK-05 — Layout
-Status: 🟢 PASS
-```
-
-khi toàn bộ Acceptance Criteria đã đạt.
+**Kết quả:** 🟢 PASS
 
 ---
 
-# 23. Ghi chú quan trọng
+### Review 03 — Quality
 
-TASK-05 ưu tiên **hiểu bản chất trước khi code**.
+Đã thực hiện:
 
-Không đánh giá TASK chỉ dựa trên việc:
-
-```text
-"Code chạy được"
+```powershell
+npm run lint
+npm run build
 ```
 
-Một TASK được coi là hoàn thành khi đồng thời đạt:
+Cả hai đều đạt.
+
+**Kết quả:** 🟢 PASS
+
+---
+
+### Review 04 — Browser
+
+Đã xác nhận giao diện hiển thị đúng và `children` hoạt động.
+
+**Kết quả:** 🟢 PASS
+
+---
+
+### Review 05 — Git
+
+Chưa thực hiện commit cuối TASK-05.
+
+**Kết quả:** ⬜ Pending
+
+---
+
+## 23. Final Status
+
+### TASK-05 — Layout
 
 ```text
-Kiến thức
-    +
-Thiết kế
-    +
-Code
-    +
-Kiểm thử
-    +
-Documentation
-    +
-Git
-    +
-Progress
+Knowledge        🟢 PASS
+Implementation   🟢 PASS
+Quality          🟢 PASS
+Documentation    🟢 PASS
+Git              ⬜ PENDING
+Push             ⬜ PENDING
+Final Review     ⬜ PENDING
 ```
 
-Mục tiêu của dự án không chỉ là tạo ra một ứng dụng chạy được mà còn xây dựng được **quy trình phát triển có thể giải thích, kiểm tra, truy vết và học lại về sau**.
+**Overall Status:**
+
+🟡 IN PROGRESS
+
+TASK-05 chỉ chuyển sang:
+
+```text
+🟢 PASS
+```
+
+sau khi hoàn thành:
+
+1. Git review.
+2. Commit TASK-05.
+3. Push GitHub.
+4. Kiểm tra lại remote.
+5. Kiểm tra Working Tree.
+6. Final Review.

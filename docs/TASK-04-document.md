@@ -7,7 +7,7 @@
 | **TASK ID**              | TASK-04                                                                                                          |
 | **Tên TASK**             | Documentation — Xây dựng hệ thống tài liệu dự án                                                                 |
 | **Phase**                | Phase 0 — Foundation                                                                                             |
-| **Trạng thái**           | 🟡 IN ROGRESS                                                                                                    |
+| **Trạng thái**           | 🟢 PASS                                                                                                          |
 | **Mục tiêu chính**       | Xây dựng hệ thống tài liệu chính thức, có cấu trúc và có khả năng theo dõi xuyên suốt quá trình phát triển dự án |
 | **TASK trước**           | TASK-03 — Git/GitHub                                                                                             |
 | **Dependency**           | TASK-01 → TASK-02 → TASK-03 → TASK-04                                                                            |
