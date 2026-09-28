@@ -1,4 +1,4 @@
-# TASK-05 — Layout
+# TASK-05 — Layout Foundation
 
 > Xây dựng nền tảng Layout cho ứng dụng `hc-tc-office`.
 
@@ -6,15 +6,16 @@
 
 ## 1. Thông tin TASK
 
-| Thuộc tính     | Nội dung                                     |
-| -------------- | -------------------------------------------- |
-| TASK ID        | TASK-05                                      |
-| Tên TASK       | Layout Foundation                            |
-| Phase          | Phase 1 — UI Foundation                      |
-| Trạng thái     | 🟡 IN PROGRESS                               |
-| Ngày bắt đầu   | 2026-09-23                                   |
-| Mục tiêu chính | Xây dựng cấu trúc Layout cơ bản cho ứng dụng |
-| Công nghệ      | React + TypeScript + Vite + Tailwind CSS     |
+| Thuộc tính      | Nội dung                                     |
+| --------------- | -------------------------------------------- |
+| TASK ID         | TASK-05                                      |
+| Tên TASK        | Layout Foundation                            |
+| Phase           | Phase 1 — UI Foundation                      |
+| Trạng thái      | 🟢 PASS                                      |
+| Ngày bắt đầu    | 2026-09-23                                   |
+| Ngày hoàn thành | 2026-09-27                                   |
+| Mục tiêu chính  | Xây dựng cấu trúc Layout cơ bản cho ứng dụng |
+| Công nghệ       | React + TypeScript + Vite + Tailwind CSS     |
 
 ---
 
@@ -80,6 +81,7 @@ Sau khi hoàn thành TASK-05, người học phải:
 - Tích hợp Layout vào `App`.
 - Kiểm tra ESLint.
 - Kiểm tra build.
+- Browser verification.
 - Cập nhật documentation.
 - Commit.
 - Push GitHub.
@@ -106,7 +108,7 @@ TASK-05 chưa thực hiện:
 
 ## 6. Kiến thức cần nắm
 
-### 6.1 Component
+### 6.1. Component
 
 Component là một đơn vị giao diện có thể tái sử dụng.
 
@@ -120,7 +122,7 @@ function Header() {
 
 ---
 
-### 6.2 Props
+### 6.2. Props
 
 Props là dữ liệu được truyền từ component cha xuống component con.
 
@@ -136,7 +138,7 @@ TASK-05 chưa cần truyền Props cho `Header` và `Sidebar` vì chưa có nhu 
 
 ---
 
-### 6.3 children
+### 6.3. children
 
 `children` là nội dung được truyền vào bên trong component.
 
@@ -158,7 +160,7 @@ type MainContentProps = {
 
 ---
 
-### 6.4 ReactNode
+### 6.4. ReactNode
 
 `ReactNode` biểu diễn nội dung mà React có thể render.
 
@@ -283,18 +285,18 @@ src/
 
 ## 12. Subtasks
 
-| Subtask | Nội dung                                            | Status     |
-| ------- | --------------------------------------------------- | ---------- |
-| 05.1    | Khởi động TASK-05 và cập nhật Progress              | 🟢 PASS    |
-| 05.2    | Học bản chất Component, Props, Layout và `children` | 🟢 PASS    |
-| 05.3    | Thiết kế cấu trúc `MainLayout`                      | 🟢 PASS    |
-| 05.4    | Implement `MainLayout` cơ bản                       | 🟢 PASS    |
-| 05.5    | Tạo Page/component thử nghiệm                       | 🟢 PASS    |
-| 05.6    | Review TypeScript và ESLint                         | 🟢 PASS    |
-| 05.7    | Build và kiểm thử                                   | 🟢 PASS    |
-| 05.8    | Documentation và Progress Update                    | 🟢 PASS    |
-| 05.9    | Commit TASK-05                                      | ⬜ Pending |
-| 05.10   | Push GitHub và Final Review                         | ⬜ Pending |
+| Subtask | Nội dung                                            | Status  |
+| ------- | --------------------------------------------------- | ------- |
+| 05.1    | Khởi động TASK-05 và cập nhật Progress              | 🟢 PASS |
+| 05.2    | Học bản chất Component, Props, Layout và `children` | 🟢 PASS |
+| 05.3    | Thiết kế cấu trúc `MainLayout`                      | 🟢 PASS |
+| 05.4    | Implement `MainLayout` cơ bản                       | 🟢 PASS |
+| 05.5    | Tạo Page/component thử nghiệm                       | 🟢 PASS |
+| 05.6    | Review TypeScript và ESLint                         | 🟢 PASS |
+| 05.7    | Build và kiểm thử                                   | 🟢 PASS |
+| 05.8    | Documentation và Progress Update                    | 🟢 PASS |
+| 05.9    | Commit TASK-05                                      | 🟢 PASS |
+| 05.10   | Push GitHub và Final Review                         | 🟢 PASS |
 
 ---
 
@@ -321,9 +323,13 @@ Documentation
   ↓
 Commit
   ↓
+Progress Update
+  ↓
 Push
   ↓
 Final Review
+  ↓
+PASS
 ```
 
 Không chuyển sang TASK tiếp theo khi TASK-05 chưa đạt điều kiện PASS.
@@ -331,8 +337,6 @@ Không chuyển sang TASK tiếp theo khi TASK-05 chưa đạt điều kiện PA
 ---
 
 ## 14. Acceptance Criteria
-
-TASK-05 chỉ được PASS khi:
 
 ### Knowledge
 
@@ -371,16 +375,16 @@ TASK-05 chỉ được PASS khi:
 
 ### Git
 
-- [ ] Git review đạt.
-- [ ] Commit đạt.
-- [ ] Push GitHub đạt.
-- [ ] Working Tree clean.
+- [x] Git review đạt.
+- [x] Commit đạt.
+- [x] Push GitHub đạt.
+- [x] Working Tree clean.
 
 ---
 
 ## 15. Kiểm thử
 
-### 15.1 ESLint
+### 15.1. ESLint
 
 Lệnh:
 
@@ -396,7 +400,7 @@ PASS
 
 ---
 
-### 15.2 Production Build
+### 15.2. Production Build
 
 Lệnh:
 
@@ -412,7 +416,7 @@ PASS
 
 ---
 
-### 15.3 Browser Verification
+### 15.3. Browser Verification
 
 Đã kiểm tra trên trình duyệt:
 
@@ -548,9 +552,10 @@ Không có scope change lớn.
 
 ## 20. Git History
 
-| Commit    | Nội dung                                 | Trạng thái |
-| --------- | ---------------------------------------- | ---------- |
-| `605af03` | `docs(task-05): start layout foundation` | 🟢 Pushed  |
+| Commit    | Nội dung                                     | Trạng thái |
+| --------- | -------------------------------------------- | ---------- |
+| `605af03` | `docs(task-05): start layout foundation`     | 🟢 Pushed  |
+| `62df7d3` | `feat(task-05): implement layout foundation` | 🟢 Pushed  |
 
 ---
 
@@ -567,7 +572,10 @@ Không có scope change lớn.
 | 2026-09-26 | `npm run lint` đạt                                                                   | 🟢 PASS     |
 | 2026-09-26 | `npm run build` đạt                                                                  | 🟢 PASS     |
 | 2026-09-26 | Browser verification xác nhận Component Tree và `children` hoạt động                 | 🟢 PASS     |
-| 2026-09-27 | Hoàn thiện hồ sơ TASK-05.2: Lessons, Decisions, Progress và Review Log               | 🟢 PASS     |
+| 2026-09-27 | Hoàn thiện hồ sơ TASK-05: Lessons, Decisions, Progress và Review Log                 | 🟢 PASS     |
+| 2026-09-27 | Commit `62df7d3` — `feat(task-05): implement layout foundation`                      | 🟢 PASS     |
+| 2026-09-27 | Push GitHub thành công và Working Tree clean                                         | 🟢 PASS     |
+| 2026-09-27 | Final Review TASK-05                                                                 | 🟢 PASS     |
 
 ---
 
@@ -630,41 +638,60 @@ Cả hai đều đạt.
 
 ### Review 05 — Git
 
-Chưa thực hiện commit cuối TASK-05.
+Commit:
 
-**Kết quả:** ⬜ Pending
+```text
+62df7d3 feat(task-05): implement layout foundation
+```
+
+Push:
+
+```text
+605af03..62df7d3 main -> main
+```
+
+Working Tree:
+
+```text
+nothing to commit, working tree clean
+```
+
+**Kết quả:** 🟢 PASS
 
 ---
 
 ## 23. Final Status
 
-### TASK-05 — Layout
+### TASK-05 — Layout Foundation
 
 ```text
 Knowledge        🟢 PASS
 Implementation   🟢 PASS
 Quality          🟢 PASS
 Documentation    🟢 PASS
-Git              ⬜ PENDING
-Push             ⬜ PENDING
-Final Review     ⬜ PENDING
+Git              🟢 PASS
+Push             🟢 PASS
+Final Review     🟢 PASS
 ```
 
 **Overall Status:**
 
-🟡 IN PROGRESS
+🟢 PASS
 
-TASK-05 chỉ chuyển sang:
+**Commit:**
 
 ```text
-🟢 PASS
+62df7d3 feat(task-05): implement layout foundation
 ```
 
-sau khi hoàn thành:
+**GitHub:**
 
-1. Git review.
-2. Commit TASK-05.
-3. Push GitHub.
-4. Kiểm tra lại remote.
-5. Kiểm tra Working Tree.
-6. Final Review.
+```text
+main -> origin/main
+```
+
+**Working Tree:**
+
+```text
+CLEAN
+```

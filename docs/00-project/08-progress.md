@@ -96,10 +96,10 @@ Nếu Review không đạt:
 ```text
 AI/Mentor Review
        ↓
- {Review đạt?}
-    ↙      ↘
-  Không      Có
-   ↓          ↓
+{Review đạt?}
+   ↙       ↘
+ Không       Có
+  ↓           ↓
 🔴 FAIL   Documentation
               ↓
           Git Commit
@@ -264,7 +264,9 @@ Progress Update
 🟢 TASK PASS
 ```
 
-**Progress Update phải hoàn tất trước khi TASK được xác lập PASS.** Trong bước Progress Update, trạng thái của TASK được cập nhật theo bằng chứng hoàn thành và các điều kiện đóng TASK. Sau khi Progress Update hoàn tất, TASK mới được xác lập trạng thái cuối cùng là 🟢 PASS.
+**Progress Update phải hoàn tất trước khi TASK được xác lập PASS.**
+
+Trong bước Progress Update, trạng thái của TASK được cập nhật theo bằng chứng hoàn thành và các điều kiện đóng TASK. Sau khi Progress Update hoàn tất, TASK mới được xác lập trạng thái cuối cùng là 🟢 PASS.
 
 Không được xác lập PASS ở giữa workflow.
 
@@ -319,8 +321,8 @@ Các Phase hiện tại của dự án:
 
 | Phase    | Nội dung                       | Trạng thái     |
 | -------- | ------------------------------ | -------------- |
-| Phase 0  | Project Foundation             | 🟡 IN PROGRESS |
-| Phase 1  | Leadership Schedule            | ⬜ TODO        |
+| Phase 0  | Project Foundation             | 🟢 PASS        |
+| Phase 1  | UI Foundation                  | 🟡 IN PROGRESS |
 | Phase 2  | Authentication & Authorization | ⬜ TODO        |
 | Phase 3  | Work Management                | ⬜ TODO        |
 | Phase 4  | Personal Todo                  | ⬜ TODO        |
@@ -332,6 +334,8 @@ Các Phase hiện tại của dự án:
 | Phase 10 | Frontend–Backend Integration   | ⬜ TODO        |
 | Phase 11 | Testing                        | ⬜ TODO        |
 | Phase 12 | Deployment                     | ⬜ TODO        |
+
+> Phase 1 vẫn đang IN PROGRESS vì mới hoàn thành TASK-05; chưa hoàn thành toàn bộ phạm vi của Phase.
 
 ---
 
@@ -346,7 +350,7 @@ Các Phase hiện tại của dự án:
 | TASK-03 | Git + GitHub                       | 🟢 PASS | `891dfdf` |
 | TASK-04 | Documentation                      | 🟢 PASS | `46daa39` |
 
-### Trạng thái hiện tại
+### Trạng thái Phase 0
 
 ```text
 TASK-01  🟢 PASS
@@ -355,40 +359,65 @@ TASK-03  🟢 PASS
 TASK-04  🟢 PASS
 ```
 
-**Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.**
-
-Tiến độ Phase 0 hiện được xác định trực tiếp từ bảng TASK ở trên.
+**Phase 0: 🟢 PASS**
 
 ---
 
-# 13. TASK-04 Progress
+## Phase 1 — UI Foundation
 
-TASK hiện tại:
+| TASK    | Nội dung          | Status  | Commit    |
+| ------- | ----------------- | ------- | --------- |
+| TASK-05 | Layout Foundation | 🟢 PASS | `62df7d3` |
+| TASK-06 | Components        | ⬜ TODO | —         |
+
+### Trạng thái Phase 1
 
 ```text
-TASK-04 — Documentation
-Status: 🟢 PASS
+TASK-05  🟢 PASS
+TASK-06  ⬜ TODO
 ```
 
-Các công việc:
+**Phase 1: 🟡 IN PROGRESS**
 
-| Subtask | Nội dung                                   | Status  |
-| ------- | ------------------------------------------ | ------- |
-| 04.1    | Tạo thư mục Documentation                  | 🟢 Done |
-| 04.2    | Tạo cấu trúc Project Documentation         | 🟢 Done |
-| 04.3    | Development Rules                          | 🟢 Done |
-| 04.4    | Git/GitHub Rules                           | 🟢 Done |
-| 04.5    | Documentation Rules                        | 🟢 Done |
-| 04.6    | Progress Documentation                     | 🟢 Done |
-| 04.7    | Review toàn bộ Documentation               | 🟢 Done |
-| 04.8    | Commit TASK-04                             | 🟢 Done |
-| 04.9    | Cập nhật Progress và hoàn tất đóng TASK-04 | 🟢 Done |
+Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
+
+Tiến độ Phase được xác định trực tiếp từ bảng TASK ở trên.
 
 ---
 
-# 14. TASK-04 Dependency
+# 13. TASK-05 Progress
 
-TASK-04 phụ thuộc:
+TASK đã hoàn thành:
+
+```text
+TASK-05 — Layout Foundation
+
+Status: 🟢 PASS
+Commit: 62df7d3
+Push: 🟢 PASS
+Working Tree tại commit 62df7d3: CLEAN
+```
+
+Các Subtask:
+
+| Subtask | Nội dung                                            | Status  |
+| ------- | --------------------------------------------------- | ------- |
+| 05.1    | Khởi động TASK-05 và cập nhật Progress              | 🟢 PASS |
+| 05.2    | Học bản chất Component, Props, Layout và `children` | 🟢 PASS |
+| 05.3    | Thiết kế cấu trúc `MainLayout`                      | 🟢 PASS |
+| 05.4    | Implement `MainLayout` cơ bản                       | 🟢 PASS |
+| 05.5    | Tạo Page/component thử nghiệm                       | 🟢 PASS |
+| 05.6    | Review TypeScript và ESLint                         | 🟢 PASS |
+| 05.7    | Build và kiểm thử                                   | 🟢 PASS |
+| 05.8    | Documentation và Progress Update                    | 🟢 PASS |
+| 05.9    | Commit TASK-05                                      | 🟢 PASS |
+| 05.10   | Push GitHub và Final Review                         | 🟢 PASS |
+
+---
+
+# 14. TASK-05 Dependency
+
+TASK-05 phụ thuộc:
 
 ```text
 TASK-01
@@ -398,6 +427,8 @@ TASK-02
 TASK-03
    ↓
 TASK-04
+   ↓
+TASK-05
 ```
 
 Hiện tại:
@@ -406,10 +437,11 @@ Hiện tại:
 TASK-01  🟢 PASS
 TASK-02  🟢 PASS
 TASK-03  🟢 PASS
-TASK-04  🟡 IN PROGRESS
+TASK-04  🟢 PASS
+TASK-05  🟢 PASS
 ```
 
-Dependency của TASK-04 đã đáp ứng điều kiện để thực hiện.
+Dependency của TASK-05 đã được đáp ứng đầy đủ.
 
 ---
 
@@ -421,7 +453,7 @@ Các TASK FAIL phải được ghi nhận trong bảng:
 | ---- | --------- | ---------- | -------- | ------ |
 | —    | —         | —          | —        | —      |
 
-Nếu phát sinh FAIL mới, phải bổ sung vào bảng.
+Hiện tại chưa có TASK FAIL.
 
 ---
 
@@ -441,17 +473,18 @@ Hiện tại chưa có TASK BLOCKED.
 
 Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 
-| Date       | TASK    | From        | To          | Reason                                                                       |
-| ---------- | ------- | ----------- | ----------- | ---------------------------------------------------------------------------- |
-| 2026-09-16 | TASK-01 | TODO        | IN PROGRESS | Khởi tạo project                                                             |
-| 2026-09-16 | TASK-01 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria                                               |
-| 2026-09-16 | TASK-02 | TODO        | IN PROGRESS | Chuẩn hóa cấu trúc                                                           |
-| 2026-09-16 | TASK-02 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria                                               |
-| 2026-09-16 | TASK-03 | TODO        | IN PROGRESS | Thiết lập Git/GitHub                                                         |
-| 2026-09-16 | TASK-03 | IN PROGRESS | PASS        | Git/GitHub workflow đạt                                                      |
-| 2026-09-16 | TASK-04 | TODO        | IN PROGRESS | Bắt đầu xây dựng Project Documentation                                       |
-| 2026-09-23 | TASK-04 | IN PROGRESS | PASS        | Hoàn thành Documentation, Review, Lint, Build, Git Commit và Progress Update |
-| 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                     |
+| Date       | TASK    | From        | To          | Reason                                                                                       |
+| ---------- | ------- | ----------- | ----------- | -------------------------------------------------------------------------------------------- |
+| 2026-09-16 | TASK-01 | TODO        | IN PROGRESS | Khởi tạo project                                                                             |
+| 2026-09-16 | TASK-01 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria                                                               |
+| 2026-09-16 | TASK-02 | TODO        | IN PROGRESS | Chuẩn hóa cấu trúc                                                                           |
+| 2026-09-16 | TASK-02 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria                                                               |
+| 2026-09-16 | TASK-03 | TODO        | IN PROGRESS | Thiết lập Git/GitHub                                                                         |
+| 2026-09-16 | TASK-03 | IN PROGRESS | PASS        | Git/GitHub workflow đạt                                                                      |
+| 2026-09-16 | TASK-04 | TODO        | IN PROGRESS | Bắt đầu xây dựng Project Documentation                                                       |
+| 2026-09-23 | TASK-04 | IN PROGRESS | PASS        | Hoàn thành Documentation, Review, Lint, Build, Git Commit và Progress Update                 |
+| 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                                     |
+| 2026-09-27 | TASK-05 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria, Documentation, Commit `62df7d3`, Push GitHub và Final Review |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -505,6 +538,8 @@ Commit không được chứa:
 - File backup không cần thiết.
 - ZIP trao đổi không phải Source of Truth.
 
+TASK-05 đã tuân thủ các điều kiện trên.
+
 ---
 
 # 19. Progress Update Moments
@@ -515,7 +550,7 @@ Commit không được chứa:
 
 ```text
 TODO
-  ↓
+ ↓
 IN PROGRESS
 ```
 
@@ -523,7 +558,7 @@ IN PROGRESS
 
 ```text
 IN PROGRESS
-  ↓
+ ↓
 BLOCKED
 ```
 
@@ -531,7 +566,7 @@ BLOCKED
 
 ```text
 BLOCKED
-  ↓
+ ↓
 IN PROGRESS
 ```
 
@@ -541,11 +576,11 @@ Chỉ sau khi:
 
 ```text
 Review
-  ↓
+ ↓
 Documentation
-  ↓
+ ↓
 Git Commit
-  ↓
+ ↓
 Progress Update
 ```
 
@@ -554,6 +589,8 @@ mới xác lập:
 ```text
 🟢 PASS
 ```
+
+TASK-05 đã hoàn thành chuỗi này.
 
 ---
 
@@ -611,27 +648,38 @@ Status: 🟡 IN PROGRESS
 ## Current TASK
 
 ```text
-TASK-05 — Layout
-Status: 🟡 IN PROGRESS
+TASK-06 — Components
 
+Status: ⬜ TODO
 ```
 
 ## Last Completed TASK
 
 ```text
-TASK-04 — Documentation
+TASK-05 — Layout Foundation
+
 Status: 🟢 PASS
-Commit: f041c95
+
+Commit: 62df7d3
+```
+
+## Previous TASK
+
+```text
+TASK-04 — Documentation
+
+Status: 🟢 PASS
 ```
 
 ## Next TASK
 
 ```text
 TASK-06 — Components
+
 Status: ⬜ TODO
 ```
 
-TASK-05 chỉ được bắt đầu sau khi TASK-04 đáp ứng đầy đủ điều kiện PASS và được phép chuyển tiếp theo Project Plan.
+TASK-06 chỉ được bắt đầu sau khi TASK-05 đã đáp ứng đầy đủ điều kiện PASS và được phép chuyển tiếp theo Project Plan.
 
 ---
 
@@ -639,70 +687,77 @@ TASK-05 chỉ được bắt đầu sau khi TASK-04 đáp ứng đầy đủ đi
 
 Thứ tự công việc hiện tại:
 
-```text
-1. Review toàn bộ 8 Project Documentation files
-        ↓
-2. Kiểm tra Cross-document Consistency
-        ↓
-3. Hoàn thiện TASK-04 Documentation
-        ↓
-4. Self-Test / Documentation Review
-        ↓
-5. Git status / diff / staged review
-        ↓
-6. Commit TASK-04
-        ↓
-7. Update 08-progress.md
-        ↓
-8. Xác lập TASK-04 PASS
-        ↓
-9. Push GitHub
-        ↓
-10. Cho phép chuyển sang TASK-05
-```
+1. Hoàn tất Cross-document Consistency cho TASK-05
+   ↓
+2. Kiểm tra git diff --check
+   ↓
+3. Kiểm tra git status
+   ↓
+4. Stage các thay đổi Documentation
+   ↓
+5. Review staged diff
+   ↓
+6. Commit cập nhật Documentation/Progress
+   ↓
+7. Push GitHub
+   ↓
+8. Final verification
+   ↓
+9. Xác nhận Working Tree clean
+   ↓
+10. Cho phép chuyển sang TASK-06
 
 ---
 
-# 24. Checklist đóng TASK-04
+# 24. Checklist đóng TASK-05
 
 ```text
+## Knowledge
+
+- [x] Hiểu Component
+- [x] Hiểu Props
+- [x] Hiểu children
+- [x] Hiểu ReactNode
+- [x] Hiểu Layout
+- [x] Phân biệt Layout và Page
+- [x] Hiểu Component Composition
+
+## Implementation
+
+- [x] Header
+- [x] Sidebar
+- [x] MainContent
+- [x] MainLayout
+- [x] App tích hợp MainLayout
+- [x] children hoạt động
+
+## Quality
+
+- [x] npm run lint
+- [x] npm run build
+- [x] Kiểm tra giao diện trên trình duyệt
+
 ## Documentation
-- [x] 01-project-overview.md hoàn chỉnh
-- [x] 02-requirements.md hoàn chỉnh
-- [x] 03-roadmap.md hoàn chỉnh
-- [x] 04-task-management.md hoàn chỉnh
-- [x] 05-development-rules.md hoàn chỉnh
-- [x] 06-git-github-rules.md hoàn chỉnh
-- [x] 07-documentation-rules.md hoàn chỉnh
-- [x] 08-progress.md hoàn chỉnh
 
-## Cross-document
-- [x] Không mâu thuẫn Workflow
-- [x] Không mâu thuẫn PASS condition
-- [x] Dependency nhất quán
-- [x] Scope nhất quán
-- [x] Documentation rules nhất quán
-- [x] Git rules nhất quán
-- [x] Progress phản ánh đúng thực tế
-
-## Review
-- [x] AI/Mentor Review đạt
-- [x] Không còn lỗi BLOCKER
-- [x] Không còn lỗi Documentation Integrity
+- [x] TASK-05 document hoàn chỉnh
+- [x] Lessons cập nhật
+- [x] Decisions cập nhật
+- [x] Progress History cập nhật
+- [x] Review Log cập nhật
+- [x] 08-progress.md cập nhật
 
 ## Git
-- [x] git status
-- [x] git diff
-- [x] git diff --staged
-- [x] Git Commit
-- [ ] Git Push
 
-## Progress
-- [x] 08-progress.md cập nhật
-- [x] TASK-04 được xác lập PASS sau Progress Update
+- [x] git status
+- [x] git diff --check
+- [x] staged review
+- [x] Commit TASK-05
+- [x] Push GitHub
+- [x] Working Tree clean
 
 ## Final
-- [x] 🟢 TASK-04 PASS
+
+- [x] 🟢 TASK-05 PASS
 ```
 
 ---
