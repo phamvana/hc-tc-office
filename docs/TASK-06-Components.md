@@ -4,7 +4,7 @@
 
 - **Tên:** Components
 - **Phase:** Phase 1 — UI Foundation
-- **Trạng thái:** IN PROGRESS
+- **Trạng thái:** BLOCKED — chờ phê duyệt push lên `origin/main`
 - **Ngày bắt đầu:** 2026-09-28
 - **TASK trước:** TASK-05 — Layout Foundation
 - **Công nghệ:** React + TypeScript + Vite + Tailwind CSS
@@ -370,9 +370,9 @@ nothing to commit, working tree clean
 
 - [x] `git diff --check` PASS.
 - [x] Staged diff được review; các file staged đều thuộc phạm vi TASK-06.
-- [ ] Commit đúng nội dung.
+- [x] Commit đúng nội dung: `ae698e7`.
 - [ ] Push thành công.
-- [ ] Working tree clean.
+- [x] Working tree clean sau local commit.
 
 ---
 
@@ -412,6 +412,7 @@ Props được khai báo bằng type của React như `ButtonHTMLAttributes` và
 | Vấn đề | Xử lý | Kết quả |
 | --- | --- | --- |
 | Tailwind chưa có trong dependencies và cấu hình Vite, nên utility classes không có hiệu lực. | Cài `tailwindcss` và `@tailwindcss/vite`, thêm plugin vào `vite.config.ts`, import Tailwind trong `src/index.css`. | Build và trình duyệt xác nhận CSS được áp dụng. |
+| Auto-review từ chối `git push origin main` vì thao tác đẩy nội dung repository lên nhánh mặc định chưa được ủy quyền rõ. | Giữ các commit trong local và chờ người dùng phê duyệt đúng đích push. | Chưa push; TASK-06 đang BLOCKED ở bước đồng bộ remote. |
 
 ---
 
@@ -423,12 +424,15 @@ Props được khai báo bằng type của React như `ButtonHTMLAttributes` và
 | 2026-10-02 | Implement Button, Card, SectionHeader và cấu hình Tailwind CSS | IN PROGRESS |
 | 2026-10-02 | Lint, build và browser verification đạt | IN PROGRESS |
 | 2026-10-02 | Người phát triển xác nhận Knowledge Review: Button, Card, SectionHeader, children, Composition, Component/Page/Layout | PASS |
+| 2026-10-02 | Local commit `ae698e7` đã tạo; push bị Auto-review từ chối, chờ phê duyệt | BLOCKED |
 
 ---
 
 ## 12. Git History
 
-Chưa tạo commit hoặc push cho TASK-06. Thực hiện sau khi hoàn tất review và các điều kiện đóng TASK.
+| Commit | Nội dung | Trạng thái |
+| --- | --- | --- |
+| `ae698e7` | `feat(task-06): build reusable components` | Local; chưa push |
 
 ---
 
@@ -443,16 +447,16 @@ Chỉ thực hiện khi toàn bộ công việc hoàn thành.
 - [x] Build
 - [x] Documentation Review
 - [x] Git Review: `git status`, staged diff và whitespace đã được rà soát.
-- [ ] Push
-- [ ] Working Tree Clean
+- [ ] Push `ae698e7` lên `origin/main` (đang chờ phê duyệt)
+- [x] Working Tree Clean sau local commit
 
 ---
 
 ## 14. Final Status
 
-**IN PROGRESS**
+**BLOCKED**
 
-Các điều kiện còn lại gồm commit/push và xác minh Working Tree sạch. TASK-06 chỉ được chuyển sang:
+Auto-review từ chối push `ae698e7` lên `origin/main` do chưa có ủy quyền rõ cho thao tác xuất repository lên nhánh mặc định. Chờ người dùng phê duyệt đúng đích push. Sau khi push và xác minh remote thành công, TASK-06 mới có thể chuyển sang:
 
 **PASS**
 

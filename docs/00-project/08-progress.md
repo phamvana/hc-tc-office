@@ -335,7 +335,7 @@ Các Phase hiện tại của dự án:
 | Phase 11 | Testing                        | ⬜ TODO        |
 | Phase 12 | Deployment                     | ⬜ TODO        |
 
-> Phase 1 vẫn đang IN PROGRESS: TASK-05 đã PASS và TASK-06 đang được thực hiện.
+> Phase 1 vẫn đang IN PROGRESS: TASK-05 đã PASS; TASK-06 hiện BLOCKED ở bước push.
 
 ---
 
@@ -368,13 +368,13 @@ TASK-04  🟢 PASS
 | TASK    | Nội dung          | Status          | Commit    |
 | ------- | ----------------- | --------------- | --------- |
 | TASK-05 | Layout Foundation | 🟢 PASS         | `62df7d3` |
-| TASK-06 | Components        | 🟡 IN PROGRESS  | —         |
+| TASK-06 | Components        | ⏸️ BLOCKED      | `ae698e7` |
 
 ### Trạng thái Phase 1
 
 ```text
 TASK-05  🟢 PASS
-TASK-06  🟡 IN PROGRESS
+TASK-06  ⏸️ BLOCKED
 ```
 
 **Phase 1: 🟡 IN PROGRESS**
@@ -486,6 +486,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                                     |
 | 2026-09-27 | TASK-05 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria, Documentation, Commit `62df7d3`, Push GitHub và Final Review |
 | 2026-10-01 | TASK-06 | TODO        | IN PROGRESS | Bắt đầu triển khai Button và tích hợp thử; TASK-05 đã PASS                                  |
+| 2026-10-02 | TASK-06 | IN PROGRESS | BLOCKED     | Auto-review từ chối push `ae698e7` lên `origin/main`; chờ người dùng phê duyệt đích push    |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -651,7 +652,7 @@ Status: 🟡 IN PROGRESS
 ```text
 TASK-06 — Components
 
-Status: 🟡 IN PROGRESS
+Status: ⏸️ BLOCKED
 ```
 
 ## Last Completed TASK
@@ -677,21 +678,20 @@ Status: 🟢 PASS
 ```text
 TASK-06 — Components
 
-Status: 🟡 IN PROGRESS
+Status: ⏸️ BLOCKED
 ```
 
-TASK-06 đã bắt đầu sau khi TASK-05 đạt PASS. Các tiêu chí nghiệm thu của TASK-06 vẫn đang thực hiện.
+TASK-06 đã hoàn thành implementation và local commit. Push lên `origin/main` đang chờ phê duyệt; chưa xác lập PASS.
 
 ---
 
 # 23. Immediate Next Actions
 
-Thứ tự công việc hiện tại cho TASK-06:
+Điều kiện để tiếp tục TASK-06:
 
-1. Commit staged changes TASK-06 đã qua review.
-2. Push commit lên `origin/main`.
-3. Xác minh remote và Working Tree.
-4. Cập nhật trạng thái TASK-06 sau khi toàn bộ điều kiện đóng TASK đạt.
+1. Người dùng phê duyệt push commit `ae698e7` lên `origin/main`.
+2. Push commit và xác minh remote.
+3. Cập nhật trạng thái TASK-06 sau khi mọi điều kiện đóng TASK đạt.
 
 ---
 
