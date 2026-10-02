@@ -4,7 +4,7 @@
 
 - **Tên:** Leadership Schedule Page Foundation
 - **Phase:** Phase 2 — Leadership Schedule
-- **Trạng thái:** IN PROGRESS
+- **Trạng thái:** BLOCKED — auto-review từ chối push; cần phê duyệt rõ cho các commit và đích remote.
 - **Ngày bắt đầu:** 2026-10-02
 - **TASK trước:** TASK-06 — Components (PASS)
 - **Dependency:** TASK-01 đến TASK-06 (PASS)
@@ -70,8 +70,8 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 
 - [x] `git diff --check` đạt; staged diff được review.
 - [x] Commit phản ánh đúng scope TASK-07: `2679612` (`feat(task-07): build leadership schedule page foundation`).
-- [ ] Push và xác minh remote sau khi được phê duyệt theo quy trình Git.
-- [ ] Push và xác minh remote; sau đó hoàn tất Final Verification trước khi đề xuất PASS.
+- [ ] Push các commit TASK-07 đang có trên `main` lên `origin/main` sau khi có phê duyệt rõ ràng; auto-review đã từ chối lần thử trước.
+- [ ] Xác minh remote sau khi push; sau đó hoàn tất Final Verification trước khi đề xuất PASS.
 
 ## 5. Kế hoạch thực hiện
 
@@ -103,6 +103,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | Vấn đề | Xử lý | Kết quả |
 | --- | --- | --- |
 | Màn hình hẹp không đủ chỗ cho 7 cột ngày và cột lãnh đạo. | Đặt chiều rộng tối thiểu cho bảng bên trong vùng `overflow-x-auto`; giữ cột lãnh đạo cố định khi cuộn. | Browser Verification trên viewport hẹp cho thấy trang không bị ép cột; người xem có thể cuộn ngang qua các ngày. |
+| Auto-review từ chối push từ `main` lên `origin/main` do chưa có phê duyệt rõ cho payload và đích. | Dừng thao tác push; ghi trạng thái BLOCKED trong TASK-07 và `08-progress.md`; yêu cầu người dùng phê duyệt rõ toàn bộ commit local trước khi thử lại. | Chưa có commit TASK-07 nào được push; chờ phê duyệt. |
 
 ## 9. Progress Log
 
@@ -112,7 +113,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | 2026-10-02 | Hoàn thành Page, mock data, TypeScript types và tích hợp MainLayout. | IN PROGRESS |
 | 2026-10-02 | Lint, build và Browser Verification đạt; rà soát diff. | IN PROGRESS |
 | 2026-10-02 | Knowledge Review đạt: phân biệt Page/Layout/Component và giải thích quan hệ ScheduleEvent–Leader qua leaderId. | IN PROGRESS |
-| 2026-10-02 | Các thay đổi TASK-07 đã commit local; push chưa thực hiện, đang chờ phê duyệt rõ ràng. | IN PROGRESS |
+| 2026-10-02 | Các thay đổi TASK-07 đã commit local; auto-review từ chối lần push trước, cần phê duyệt rõ ràng cho payload hiện tại lên `origin/main`. | BLOCKED |
 
 ## 10. Git History
 
@@ -122,7 +123,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | `648e03a` | `docs(task-07): record implementation and verification` | Local; chờ phê duyệt push |
 | `0a987c9` | `docs(task-07): record knowledge review` | Local; chờ phê duyệt push |
 
-Các commit cập nhật Progress tiếp theo cũng đang ở local. Push toàn bộ thay đổi TASK-07 chưa được thực hiện; xem Git history để biết trạng thái nhánh hiện tại.
+Các commit cập nhật Progress tiếp theo cũng đang ở local. Auto-review đã từ chối lệnh push `main` → `origin/main` vì chưa có xác nhận rõ cho đúng payload/đích. Hiện chưa có commit TASK-07 nào được push. Trước khi thử lại, cần phê duyệt rõ toàn bộ commit trong `origin/main..main`.
 
 ## 11. Final Review
 
@@ -132,8 +133,9 @@ Các commit cập nhật Progress tiếp theo cũng đang ở local. Push toàn 
 - [x] Documentation Review: nội dung TASK-07 và trạng thái trong `08-progress.md` khớp với phạm vi/tiến độ thực tế.
 - [x] Knowledge Review: người phát triển giải thích đúng vai trò Page/Layout/Component và quan hệ một-nhiều qua `leaderId`; `leaderId` là tham chiếu logic, chưa phải ràng buộc database.
 - [x] Git Commit local: `2679612`.
-- [ ] Push và xác minh remote sau khi được phê duyệt.
+- [ ] Push toàn bộ commit local TASK-07 từ `main` lên `origin/main` sau khi có phê duyệt rõ ràng.
+- [ ] Xác minh remote và hoàn tất Final Verification.
 
 ## 12. Final Status
 
-**IN PROGRESS** — Knowledge Review đạt; chờ phê duyệt push và xác minh remote.
+**BLOCKED** — Knowledge Review đạt; auto-review từ chối push. Cần người dùng phê duyệt rõ cho toàn bộ commit local TASK-07 trên `main` lên `origin/main`, sau đó mới xác minh remote và hoàn tất TASK.

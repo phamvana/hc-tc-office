@@ -323,7 +323,7 @@ Các Phase hiện tại của dự án:
 | -------- | ------------------------------ | -------------- |
 | Phase 0  | Project Foundation             | 🟢 PASS        |
 | Phase 1  | UI Foundation                  | 🟢 PASS        |
-| Phase 2  | Leadership Schedule            | 🟡 IN PROGRESS |
+| Phase 2  | Leadership Schedule            | ⏸️ BLOCKED     |
 | Phase 3  | Authentication & Authorization | ⬜ TODO        |
 | Phase 4  | Work Management                | ⬜ TODO        |
 | Phase 5  | Personal Todo                  | ⬜ TODO        |
@@ -384,9 +384,9 @@ TASK-06  🟢 PASS
 
 | TASK    | Nội dung                              | Status          | Commits |
 | ------- | ------------------------------------- | --------------- | ------- |
-| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | Local; chưa push |
+| TASK-07 | Leadership Schedule Page Foundation  | ⏸️ BLOCKED | Local; chưa push |
 
-TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification và Knowledge Review đạt. Các thay đổi TASK-07 đã được commit ở local; push chưa thực hiện và chờ phê duyệt. Remote verification và nghiệm thu cuối còn chờ.
+TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification và Knowledge Review đạt. Lần push từ `main` lên `origin/main` bị auto-review từ chối do chưa có xác nhận rõ cho payload/đích. TASK đang BLOCKED; chưa có commit TASK-07 nào được push.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -472,9 +472,9 @@ Các TASK BLOCKED phải được ghi nhận:
 
 | TASK | Category | Reason | Impact | Condition to Resume |
 | ---- | -------- | ------ | ------ | ------------------- |
-| —    | —        | —      | —      | —                   |
+| TASK-07 | Permission / Git remote | Auto-review từ chối lệnh push do chưa có xác nhận rõ cho payload và đích `origin/main`. | Chưa đồng bộ code/tài liệu TASK-07; chưa thể xác minh remote hoặc xác lập PASS. | Người dùng phê duyệt rõ việc push toàn bộ commit TASK-07 hiện có trên `main` lên `origin/main`. |
 
-Hiện tại chưa có TASK BLOCKED.
+TASK-07 là TASK BLOCKED hiện tại.
 
 ---
 
@@ -500,6 +500,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-02 | TASK-06 | IN PROGRESS | PASS        | Acceptance Criteria, Knowledge Review, Git, documentation và remote verification đạt       |
 | 2026-10-02 | TASK-07 | TODO        | IN PROGRESS | Người dùng xác nhận tiếp tục Phase 2; chốt phạm vi Page nền tảng và lịch tuần dạng bảng     |
 | 2026-10-02 | TASK-07 | IN PROGRESS | IN PROGRESS | Knowledge Review đạt; cập nhật tài liệu và tiến độ; chưa push, chờ phê duyệt                 |
+| 2026-10-02 | TASK-07 | IN PROGRESS | BLOCKED     | Auto-review từ chối lần push lên `origin/main`; cần phê duyệt rõ cho toàn bộ payload hiện tại |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -665,9 +666,9 @@ Status: 🟢 PASS
 ```text
 TASK-07 — Leadership Schedule Page Foundation
 
-Status: 🟡 IN PROGRESS
+Status: ⏸️ BLOCKED
 Dependency: TASK-01 đến TASK-06 — PASS
-Git: Các thay đổi TASK-07 đã commit ở local; chưa push, chờ phê duyệt.
+Git: Các commit TASK-07 ở local; push bị auto-review từ chối, chưa push.
 ```
 
 ## Last Completed TASK
@@ -702,8 +703,8 @@ TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK-07 được
 
 Đầu việc tiếp theo:
 
-1. Chờ phê duyệt push ba commit TASK-07 lên `origin/main`.
-2. Push và xác minh remote; hoàn tất Final Verification trước khi xác lập trạng thái TASK.
+1. Chờ phê duyệt rõ việc push toàn bộ commit TASK-07 từ `main` lên `origin/main`.
+2. Sau khi được phê duyệt, push và xác minh remote; hoàn tất Final Verification trước khi xác lập trạng thái TASK.
 
 ---
 
