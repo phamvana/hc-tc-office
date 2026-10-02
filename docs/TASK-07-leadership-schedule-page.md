@@ -112,7 +112,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | 2026-10-02 | Hoàn thành Page, mock data, TypeScript types và tích hợp MainLayout. | IN PROGRESS |
 | 2026-10-02 | Lint, build và Browser Verification đạt; rà soát diff. | IN PROGRESS |
 | 2026-10-02 | Knowledge Review đạt: phân biệt Page/Layout/Component và giải thích quan hệ ScheduleEvent–Leader qua leaderId. | IN PROGRESS |
-| 2026-10-02 | Tạo ba commit local; push chưa thực hiện, đang chờ phê duyệt rõ ràng. | IN PROGRESS |
+| 2026-10-02 | Các thay đổi TASK-07 đã commit local; push chưa thực hiện, đang chờ phê duyệt rõ ràng. | IN PROGRESS |
 
 ## 10. Git History
 
@@ -121,6 +121,8 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | `2679612` | `feat(task-07): build leadership schedule page foundation` | Local; chờ phê duyệt push |
 | `648e03a` | `docs(task-07): record implementation and verification` | Local; chờ phê duyệt push |
 | `0a987c9` | `docs(task-07): record knowledge review` | Local; chờ phê duyệt push |
+
+Các commit cập nhật Progress tiếp theo cũng đang ở local. Push toàn bộ thay đổi TASK-07 chưa được thực hiện; xem Git history để biết trạng thái nhánh hiện tại.
 
 ## 11. Final Review
 
