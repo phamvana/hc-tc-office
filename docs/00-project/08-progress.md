@@ -382,11 +382,11 @@ TASK-06  🟢 PASS
 
 ## Phase 2 — Leadership Schedule
 
-| TASK    | Nội dung                              | Status          | Commit |
-| ------- | ------------------------------------- | --------------- | ------ |
-| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | `2679612` |
+| TASK    | Nội dung                              | Status          | Commits |
+| ------- | ------------------------------------- | --------------- | ------- |
+| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | `2679612`, `648e03a`, `0a987c9` |
 
-TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification, Knowledge Review và commit local `2679612` đạt. Push/remote verification và nghiệm thu cuối còn chờ.
+TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification và Knowledge Review đạt. Ba commit `2679612`, `648e03a`, `0a987c9` đang ở local; push chưa thực hiện và chờ phê duyệt. Remote verification và nghiệm thu cuối còn chờ.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -499,7 +499,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-02 | TASK-06 | BLOCKED     | IN PROGRESS | Người dùng phê duyệt; push commits `ae698e7` và `21111d7` lên `origin/main` thành công      |
 | 2026-10-02 | TASK-06 | IN PROGRESS | PASS        | Acceptance Criteria, Knowledge Review, Git, documentation và remote verification đạt       |
 | 2026-10-02 | TASK-07 | TODO        | IN PROGRESS | Người dùng xác nhận tiếp tục Phase 2; chốt phạm vi Page nền tảng và lịch tuần dạng bảng     |
-| 2026-10-02 | TASK-07 | IN PROGRESS | IN PROGRESS | Knowledge Review đạt; chờ phê duyệt push các commit TASK-07 lên `origin/main`              |
+| 2026-10-02 | TASK-07 | IN PROGRESS | IN PROGRESS | Knowledge Review đạt; ghi nhận ba commit local; chưa push, chờ phê duyệt                 |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -667,7 +667,7 @@ TASK-07 — Leadership Schedule Page Foundation
 
 Status: 🟡 IN PROGRESS
 Dependency: TASK-01 đến TASK-06 — PASS
-Commit: 2679612 (local; chưa push)
+Commits: 2679612, 648e03a, 0a987c9 (local; chưa push, chờ phê duyệt)
 ```
 
 ## Last Completed TASK
@@ -702,8 +702,8 @@ TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK-07 được
 
 Đầu việc tiếp theo:
 
-1. Hoàn thiện và nghiệm thu TASK-07 — Leadership Schedule Page Foundation.
-2. Xác định TASK tiếp theo trong Phase 2 sau khi TASK-07 hoàn tất.
+1. Chờ phê duyệt push ba commit TASK-07 lên `origin/main`.
+2. Push và xác minh remote; hoàn tất Final Verification trước khi xác lập trạng thái TASK.
 
 ---
 
