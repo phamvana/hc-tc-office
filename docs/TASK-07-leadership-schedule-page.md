@@ -69,7 +69,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 ### Git / Final
 
 - [x] `git diff --check` đạt; staged diff được review.
-- [ ] Commit phản ánh đúng scope TASK-07.
+- [x] Commit phản ánh đúng scope TASK-07: `2679612` (`feat(task-07): build leadership schedule page foundation`).
 - [ ] Push và xác minh remote sau khi được phê duyệt theo quy trình Git.
 - [ ] Knowledge Review, Code Review, Documentation Review và Final Verification đạt trước khi đề xuất PASS.
 
@@ -114,7 +114,9 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 
 ## 10. Git History
 
-Cập nhật sau khi commit.
+| Commit | Nội dung | Trạng thái |
+| --- | --- | --- |
+| `2679612` | `feat(task-07): build leadership schedule page foundation` | Local; chờ phê duyệt push |
 
 ## 11. Final Review
 
@@ -123,8 +125,9 @@ Cập nhật sau khi commit.
 - [x] `npm run lint` và `npm run build` đạt.
 - [x] Documentation Review: nội dung TASK-07 và trạng thái trong `08-progress.md` khớp với phạm vi/tiến độ thực tế.
 - [ ] Knowledge Review với người phát triển.
-- [ ] Git Commit/Push và xác minh remote.
+- [x] Git Commit local: `2679612`.
+- [ ] Push và xác minh remote sau khi được phê duyệt.
 
 ## 12. Final Status
 
-**IN PROGRESS** — chờ Knowledge Review và hoàn tất Git theo quy trình dự án.
+**IN PROGRESS** — chờ Knowledge Review, phê duyệt push và xác minh remote.

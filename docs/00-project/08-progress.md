@@ -384,9 +384,9 @@ TASK-06  🟢 PASS
 
 | TASK    | Nội dung                              | Status          | Commit |
 | ------- | ------------------------------------- | --------------- | ------ |
-| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | —      |
+| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | `2679612` |
 
-TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build và Browser Verification đạt. Knowledge Review, Git Commit/Push và nghiệm thu cuối còn chờ.
+TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification và commit local `2679612` đạt. Knowledge Review, push/remote verification và nghiệm thu cuối còn chờ.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -666,6 +666,7 @@ TASK-07 — Leadership Schedule Page Foundation
 
 Status: 🟡 IN PROGRESS
 Dependency: TASK-01 đến TASK-06 — PASS
+Commit: 2679612 (local; chưa push)
 ```
 
 ## Last Completed TASK
