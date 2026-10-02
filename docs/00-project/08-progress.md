@@ -323,7 +323,7 @@ Các Phase hiện tại của dự án:
 | -------- | ------------------------------ | -------------- |
 | Phase 0  | Project Foundation             | 🟢 PASS        |
 | Phase 1  | UI Foundation                  | 🟢 PASS        |
-| Phase 2  | Leadership Schedule            | ⬜ TODO        |
+| Phase 2  | Leadership Schedule            | 🟡 IN PROGRESS |
 | Phase 3  | Authentication & Authorization | ⬜ TODO        |
 | Phase 4  | Work Management                | ⬜ TODO        |
 | Phase 5  | Personal Todo                  | ⬜ TODO        |
@@ -379,6 +379,14 @@ TASK-06  🟢 PASS
 ```
 
 **Phase 1: 🟢 PASS**
+
+## Phase 2 — Leadership Schedule
+
+| TASK    | Nội dung                              | Status          | Commit |
+| ------- | ------------------------------------- | --------------- | ------ |
+| TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | —      |
+
+TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build và Browser Verification đạt. Knowledge Review, Git Commit/Push và nghiệm thu cuối còn chờ.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -490,6 +498,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-02 | TASK-06 | IN PROGRESS | BLOCKED     | Auto-review ban đầu từ chối push; chờ người dùng phê duyệt                                  |
 | 2026-10-02 | TASK-06 | BLOCKED     | IN PROGRESS | Người dùng phê duyệt; push commits `ae698e7` và `21111d7` lên `origin/main` thành công      |
 | 2026-10-02 | TASK-06 | IN PROGRESS | PASS        | Acceptance Criteria, Knowledge Review, Git, documentation và remote verification đạt       |
+| 2026-10-02 | TASK-07 | TODO        | IN PROGRESS | Người dùng xác nhận tiếp tục Phase 2; chốt phạm vi Page nền tảng và lịch tuần dạng bảng     |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -653,7 +662,10 @@ Status: 🟢 PASS
 ## Current TASK
 
 ```text
-Không có TASK đang hoạt động.
+TASK-07 — Leadership Schedule Page Foundation
+
+Status: 🟡 IN PROGRESS
+Dependency: TASK-01 đến TASK-06 — PASS
 ```
 
 ## Last Completed TASK
@@ -677,12 +689,10 @@ Status: 🟢 PASS
 ## Next TASK
 
 ```text
-Phase 2 — Leadership Schedule
-
-Status: ⬜ TODO; chưa kích hoạt TASK mới.
+Chưa xác định; TASK-07 đang được thực hiện.
 ```
 
-TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK thuộc Phase 2 chưa được xác định hoặc kích hoạt.
+TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK-07 được kích hoạt theo yêu cầu của người dùng; scope là giao diện nền tảng dùng mock data, không bao gồm nghiệp vụ lịch.
 
 ---
 
@@ -690,8 +700,8 @@ TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK thuộc Pha
 
 Đầu việc tiếp theo:
 
-1. Xác định scope và Acceptance Criteria cho Phase 2 — Leadership Schedule.
-2. Chỉ bắt đầu TASK mới sau khi được phép theo Project Plan.
+1. Hoàn thiện và nghiệm thu TASK-07 — Leadership Schedule Page Foundation.
+2. Xác định TASK tiếp theo trong Phase 2 sau khi TASK-07 hoàn tất.
 
 ---
 

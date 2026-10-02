@@ -5,7 +5,7 @@ type MainContentProps = {
 };
 
 function MainContent({ children }: MainContentProps) {
-  return <main>{children}</main>;
+  return <main className="min-w-0 flex-1">{children}</main>;
 }
 
 export default MainContent;

@@ -9,10 +9,12 @@ type MainLayoutProps = {
 
 function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div>
+    <div className="min-h-screen bg-slate-50">
       <Header />
-      <Sidebar />
-      <MainContent>{children}</MainContent>
+      <div className="md:flex">
+        <Sidebar />
+        <MainContent>{children}</MainContent>
+      </div>
     </div>
   );
 }
