@@ -30,7 +30,7 @@ Roadmap được sử dụng để:
 | Phase    | Nội dung                       | Trạng thái     |
 | -------- | ------------------------------ | -------------- |
 | Phase 0  | Project Foundation             | 🟢 PASS        |
-| Phase 1  | UI Foundation                  | 🟡 IN PROGRESS |
+| Phase 1  | UI Foundation                  | 🟢 PASS        |
 | Phase 2  | Leadership Schedule            | ⬜ TODO        |
 | Phase 3  | Authentication & Authorization | ⬜ TODO        |
 | Phase 4  | Work Management                | ⬜ TODO        |

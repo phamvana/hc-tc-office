@@ -322,20 +322,21 @@ Các Phase hiện tại của dự án:
 | Phase    | Nội dung                       | Trạng thái     |
 | -------- | ------------------------------ | -------------- |
 | Phase 0  | Project Foundation             | 🟢 PASS        |
-| Phase 1  | UI Foundation                  | 🟡 IN PROGRESS |
-| Phase 2  | Authentication & Authorization | ⬜ TODO        |
-| Phase 3  | Work Management                | ⬜ TODO        |
-| Phase 4  | Personal Todo                  | ⬜ TODO        |
-| Phase 5  | Work Orders                    | ⬜ TODO        |
-| Phase 6  | Vehicle Dispatch               | ⬜ TODO        |
-| Phase 7  | Human Resources                | ⬜ TODO        |
-| Phase 8  | HC-TC Requirements Survey      | ⬜ TODO        |
-| Phase 9  | Backend                        | ⬜ TODO        |
-| Phase 10 | Frontend–Backend Integration   | ⬜ TODO        |
-| Phase 11 | Testing                        | ⬜ TODO        |
-| Phase 12 | Deployment                     | ⬜ TODO        |
+| Phase 1  | UI Foundation                  | 🟢 PASS        |
+| Phase 2  | Leadership Schedule            | ⬜ TODO        |
+| Phase 3  | Authentication & Authorization | ⬜ TODO        |
+| Phase 4  | Work Management                | ⬜ TODO        |
+| Phase 5  | Personal Todo                  | ⬜ TODO        |
+| Phase 6  | Work Orders                    | ⬜ TODO        |
+| Phase 7  | Vehicle Dispatch               | ⬜ TODO        |
+| Phase 8  | Human Resources                | ⬜ TODO        |
+| Phase 9  | HC-TC Requirements Survey      | ⬜ TODO        |
+| Phase 10 | Backend                        | ⬜ TODO        |
+| Phase 11 | Frontend–Backend Integration   | ⬜ TODO        |
+| Phase 12 | Testing                        | ⬜ TODO        |
+| Phase 13 | Deployment                     | ⬜ TODO        |
 
-> Phase 1 vẫn đang IN PROGRESS: TASK-05 đã PASS; TASK-06 hiện BLOCKED ở bước push.
+> Phase 1 đã PASS: TASK-05 và TASK-06 đều hoàn tất.
 
 ---
 
@@ -368,16 +369,16 @@ TASK-04  🟢 PASS
 | TASK    | Nội dung          | Status          | Commit    |
 | ------- | ----------------- | --------------- | --------- |
 | TASK-05 | Layout Foundation | 🟢 PASS         | `62df7d3` |
-| TASK-06 | Components        | ⏸️ BLOCKED      | `ae698e7` |
+| TASK-06 | Components        | 🟢 PASS         | `ae698e7` |
 
 ### Trạng thái Phase 1
 
 ```text
 TASK-05  🟢 PASS
-TASK-06  ⏸️ BLOCKED
+TASK-06  🟢 PASS
 ```
 
-**Phase 1: 🟡 IN PROGRESS**
+**Phase 1: 🟢 PASS**
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -486,7 +487,9 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                                     |
 | 2026-09-27 | TASK-05 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria, Documentation, Commit `62df7d3`, Push GitHub và Final Review |
 | 2026-10-01 | TASK-06 | TODO        | IN PROGRESS | Bắt đầu triển khai Button và tích hợp thử; TASK-05 đã PASS                                  |
-| 2026-10-02 | TASK-06 | IN PROGRESS | BLOCKED     | Auto-review từ chối push `ae698e7` lên `origin/main`; chờ người dùng phê duyệt đích push    |
+| 2026-10-02 | TASK-06 | IN PROGRESS | BLOCKED     | Auto-review ban đầu từ chối push; chờ người dùng phê duyệt                                  |
+| 2026-10-02 | TASK-06 | BLOCKED     | IN PROGRESS | Người dùng phê duyệt; push commits `ae698e7` và `21111d7` lên `origin/main` thành công      |
+| 2026-10-02 | TASK-06 | IN PROGRESS | PASS        | Acceptance Criteria, Knowledge Review, Git, documentation và remote verification đạt       |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -644,31 +647,29 @@ Desired Progress
 ```text
 Phase 1 — UI Foundation
 
-Status: 🟡 IN PROGRESS
+Status: 🟢 PASS
 ```
 
 ## Current TASK
 
 ```text
-TASK-06 — Components
-
-Status: ⏸️ BLOCKED
+Không có TASK đang hoạt động.
 ```
 
 ## Last Completed TASK
 
 ```text
-TASK-05 — Layout Foundation
+TASK-06 — Components
 
 Status: 🟢 PASS
 
-Commit: 62df7d3
+Commit: ae698e7
 ```
 
 ## Previous TASK
 
 ```text
-TASK-04 — Documentation
+TASK-05 — Layout Foundation
 
 Status: 🟢 PASS
 ```
@@ -676,22 +677,21 @@ Status: 🟢 PASS
 ## Next TASK
 
 ```text
-TASK-06 — Components
+Phase 2 — Leadership Schedule
 
-Status: ⏸️ BLOCKED
+Status: ⬜ TODO; chưa kích hoạt TASK mới.
 ```
 
-TASK-06 đã hoàn thành implementation và local commit. Push lên `origin/main` đang chờ phê duyệt; chưa xác lập PASS.
+TASK-06 đã PASS và được đồng bộ lên `origin/main`. TASK thuộc Phase 2 chưa được xác định hoặc kích hoạt.
 
 ---
 
 # 23. Immediate Next Actions
 
-Điều kiện để tiếp tục TASK-06:
+Đầu việc tiếp theo:
 
-1. Người dùng phê duyệt push commit `ae698e7` lên `origin/main`.
-2. Push commit và xác minh remote.
-3. Cập nhật trạng thái TASK-06 sau khi mọi điều kiện đóng TASK đạt.
+1. Xác định scope và Acceptance Criteria cho Phase 2 — Leadership Schedule.
+2. Chỉ bắt đầu TASK mới sau khi được phép theo Project Plan.
 
 ---
 
