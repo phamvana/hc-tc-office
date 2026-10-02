@@ -386,7 +386,7 @@ TASK-06  🟢 PASS
 | ------- | ------------------------------------- | --------------- | ------ |
 | TASK-07 | Leadership Schedule Page Foundation  | 🟡 IN PROGRESS | `2679612` |
 
-TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification và commit local `2679612` đạt. Knowledge Review, push/remote verification và nghiệm thu cuối còn chờ.
+TASK-07 hiện có Page nền tảng với mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification, Knowledge Review và commit local `2679612` đạt. Push/remote verification và nghiệm thu cuối còn chờ.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -499,6 +499,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-02 | TASK-06 | BLOCKED     | IN PROGRESS | Người dùng phê duyệt; push commits `ae698e7` và `21111d7` lên `origin/main` thành công      |
 | 2026-10-02 | TASK-06 | IN PROGRESS | PASS        | Acceptance Criteria, Knowledge Review, Git, documentation và remote verification đạt       |
 | 2026-10-02 | TASK-07 | TODO        | IN PROGRESS | Người dùng xác nhận tiếp tục Phase 2; chốt phạm vi Page nền tảng và lịch tuần dạng bảng     |
+| 2026-10-02 | TASK-07 | IN PROGRESS | IN PROGRESS | Knowledge Review đạt; chờ phê duyệt push các commit TASK-07 lên `origin/main`              |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 

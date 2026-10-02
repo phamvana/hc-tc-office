@@ -45,9 +45,9 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 
 ### Knowledge
 
-- [ ] Giải thích được Page khác Component và Layout như thế nào.
-- [ ] Giải thích được cách Page sử dụng composition và props/components dùng lại.
-- [ ] Giải thích được kiểu Leader, ScheduleEvent và mối liên hệ qua leader ID.
+- [x] Giải thích được Page khác Component và Layout như thế nào.
+- [x] Giải thích được cách Page sử dụng composition và UI components dùng lại.
+- [x] Giải thích được kiểu Leader, ScheduleEvent và mối liên hệ qua leader ID.
 
 ### Implementation
 
@@ -111,6 +111,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 | 2026-10-02 | Khởi động TASK-07 sau khi TASK-06 PASS; chốt phạm vi Page nền tảng và lịch dạng bảng. | IN PROGRESS |
 | 2026-10-02 | Hoàn thành Page, mock data, TypeScript types và tích hợp MainLayout. | IN PROGRESS |
 | 2026-10-02 | Lint, build và Browser Verification đạt; rà soát diff. | IN PROGRESS |
+| 2026-10-02 | Knowledge Review đạt: phân biệt Page/Layout/Component và giải thích quan hệ ScheduleEvent–Leader qua leaderId. | IN PROGRESS |
 
 ## 10. Git History
 
@@ -124,7 +125,7 @@ Tuần 05/10–11/10/2026 và toàn bộ tên/sự kiện/địa điểm trong t
 - [x] Browser Verification: xác nhận đủ 7 lãnh đạo, 16 sự kiện, bảng ngày trong tuần, các ô trống và cách cuộn ngang ở viewport hẹp.
 - [x] `npm run lint` và `npm run build` đạt.
 - [x] Documentation Review: nội dung TASK-07 và trạng thái trong `08-progress.md` khớp với phạm vi/tiến độ thực tế.
-- [ ] Knowledge Review với người phát triển.
+- [x] Knowledge Review: người phát triển giải thích đúng vai trò Page/Layout/Component và quan hệ một-nhiều qua `leaderId`; `leaderId` là tham chiếu logic, chưa phải ràng buộc database.
 - [x] Git Commit local: `2679612`.
 - [ ] Push và xác minh remote sau khi được phê duyệt.
 
