@@ -335,7 +335,7 @@ Các Phase hiện tại của dự án:
 | Phase 11 | Testing                        | ⬜ TODO        |
 | Phase 12 | Deployment                     | ⬜ TODO        |
 
-> Phase 1 vẫn đang IN PROGRESS vì mới hoàn thành TASK-05; chưa hoàn thành toàn bộ phạm vi của Phase.
+> Phase 1 vẫn đang IN PROGRESS: TASK-05 đã PASS và TASK-06 đang được thực hiện.
 
 ---
 
@@ -365,16 +365,16 @@ TASK-04  🟢 PASS
 
 ## Phase 1 — UI Foundation
 
-| TASK    | Nội dung          | Status  | Commit    |
-| ------- | ----------------- | ------- | --------- |
-| TASK-05 | Layout Foundation | 🟢 PASS | `62df7d3` |
-| TASK-06 | Components        | ⬜ TODO | —         |
+| TASK    | Nội dung          | Status          | Commit    |
+| ------- | ----------------- | --------------- | --------- |
+| TASK-05 | Layout Foundation | 🟢 PASS         | `62df7d3` |
+| TASK-06 | Components        | 🟡 IN PROGRESS  | —         |
 
 ### Trạng thái Phase 1
 
 ```text
 TASK-05  🟢 PASS
-TASK-06  ⬜ TODO
+TASK-06  🟡 IN PROGRESS
 ```
 
 **Phase 1: 🟡 IN PROGRESS**
@@ -485,6 +485,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-09-23 | TASK-04 | IN PROGRESS | PASS        | Hoàn thành Documentation, Review, Lint, Build, Git Commit và Progress Update                 |
 | 2026-09-23 | TASK-05 | TODO        | IN PROGRESS | Khởi động TASK-05, xác định phạm vi và chuẩn bị tài liệu                                     |
 | 2026-09-27 | TASK-05 | IN PROGRESS | PASS        | Hoàn thành Acceptance Criteria, Documentation, Commit `62df7d3`, Push GitHub và Final Review |
+| 2026-10-01 | TASK-06 | TODO        | IN PROGRESS | Bắt đầu triển khai Button và tích hợp thử; TASK-05 đã PASS                                  |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -650,7 +651,7 @@ Status: 🟡 IN PROGRESS
 ```text
 TASK-06 — Components
 
-Status: ⬜ TODO
+Status: 🟡 IN PROGRESS
 ```
 
 ## Last Completed TASK
@@ -676,36 +677,21 @@ Status: 🟢 PASS
 ```text
 TASK-06 — Components
 
-Status: ⬜ TODO
+Status: 🟡 IN PROGRESS
 ```
 
-TASK-06 chỉ được bắt đầu sau khi TASK-05 đã đáp ứng đầy đủ điều kiện PASS và được phép chuyển tiếp theo Project Plan.
+TASK-06 đã bắt đầu sau khi TASK-05 đạt PASS. Các tiêu chí nghiệm thu của TASK-06 vẫn đang thực hiện.
 
 ---
 
 # 23. Immediate Next Actions
 
-Thứ tự công việc hiện tại:
+Thứ tự công việc hiện tại cho TASK-06:
 
-1. Hoàn tất Cross-document Consistency cho TASK-05
-   ↓
-2. Kiểm tra git diff --check
-   ↓
-3. Kiểm tra git status
-   ↓
-4. Stage các thay đổi Documentation
-   ↓
-5. Review staged diff
-   ↓
-6. Commit cập nhật Documentation/Progress
-   ↓
-7. Push GitHub
-   ↓
-8. Final verification
-   ↓
-9. Xác nhận Working Tree clean
-   ↓
-10. Cho phép chuyển sang TASK-06
+1. Commit staged changes TASK-06 đã qua review.
+2. Push commit lên `origin/main`.
+3. Xác minh remote và Working Tree.
+4. Cập nhật trạng thái TASK-06 sau khi toàn bộ điều kiện đóng TASK đạt.
 
 ---
 
