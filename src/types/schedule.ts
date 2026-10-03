@@ -16,3 +16,10 @@ export type ScheduleEvent = {
   location: string;
   category: "meeting" | "fieldwork" | "internal";
 };
+
+export type WeekDay = {
+  date: string;
+  day: string;
+  shortDay: string;
+  dayNumber: string;
+};

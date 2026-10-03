@@ -385,8 +385,9 @@ TASK-06  🟢 PASS
 | TASK    | Nội dung                              | Status          | Commits |
 | ------- | ------------------------------------- | --------------- | ------- |
 | TASK-07 | Leadership Schedule Page Foundation  | 🟢 PASS | Pushed; remote verified |
+| TASK-08 | Weekly Schedule Display (componentization) | 🟡 IN PROGRESS | Checks và staged review đạt; đang commit/push |
 
-TASK-07 hoàn tất với Page nền tảng dùng mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification, Knowledge Review, Documentation và Git đều đạt. Toàn bộ commit đã được push lên `origin/main`; `HEAD` trùng remote và working tree sạch. Phase 2 tiếp tục IN PROGRESS; TASK tiếp theo chưa được xác định.
+TASK-07 hoàn tất với Page nền tảng dùng mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification, Knowledge Review, Documentation và Git đều đạt. Toàn bộ commit đã được push lên `origin/main`; `HEAD` trùng remote và working tree sạch. Mục tiêu, phạm vi và Acceptance Criteria của TASK-08 được người dùng duyệt ngày 2026-10-03; người dùng xác nhận bắt đầu cùng ngày và TASK-08 hiện IN PROGRESS.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -503,6 +504,10 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-02 | TASK-07 | IN PROGRESS | BLOCKED     | Auto-review từ chối lần push lên `origin/main`; cần phê duyệt rõ cho toàn bộ payload hiện tại |
 | 2026-10-02 | TASK-07 | BLOCKED     | IN PROGRESS | Người dùng chấp nhận push toàn bộ; đồng bộ các commit TASK-07 lên `origin/main` thành công   |
 | 2026-10-02 | TASK-07 | IN PROGRESS | PASS        | Acceptance Criteria đạt; Documentation, commit, push và remote verification hoàn tất       |
+| 2026-10-02 | TASK-08 | —           | TODO        | Hoàn thiện đề xuất componentization phần lịch tuần; chờ duyệt và chưa kích hoạt              |
+| 2026-10-03 | TASK-08 | TODO        | TODO        | Người dùng duyệt mục tiêu, phạm vi và Acceptance Criteria; chờ cho phép kích hoạt            |
+| 2026-10-03 | TASK-08 | TODO        | IN PROGRESS | Người dùng xác nhận bắt đầu TASK-08                                      |
+| 2026-10-03 | TASK-08 | IN PROGRESS | IN PROGRESS | Tách `WeeklySchedule`; checks và staged review đạt; đang commit/push |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -666,7 +671,9 @@ Status: 🟡 IN PROGRESS
 ## Current TASK
 
 ```text
-Không có TASK đang hoạt động.
+TASK-08 — Weekly Schedule Display (componentization)
+Status: 🟡 IN PROGRESS
+Started: 2026-10-03
 ```
 
 ## Last Completed TASK
@@ -690,10 +697,11 @@ Status: 🟢 PASS
 ## Next TASK
 
 ```text
-Phase 2 — Leadership Schedule tiếp tục IN PROGRESS; TASK tiếp theo chưa được xác định.
+Chưa xác định.
+Chốt sau khi TASK-08 đạt PASS.
 ```
 
-TASK-06 và TASK-07 đã PASS và được đồng bộ lên `origin/main`. TASK-07 chỉ bao gồm giao diện nền tảng dùng mock data; không bao gồm nghiệp vụ lịch thực tế.
+TASK-06 và TASK-07 đã PASS và được đồng bộ lên `origin/main`. TASK-08 đã được duyệt và kích hoạt ngày 2026-10-03. Component `WeeklySchedule` nhận typed Props đã được triển khai; lint, build, browser desktop/390×844 và staged review đạt. Commit/push và remote verification đang thực hiện; TASK chưa PASS.
 
 ---
 
@@ -701,8 +709,8 @@ TASK-06 và TASK-07 đã PASS và được đồng bộ lên `origin/main`. TASK
 
 Đầu việc tiếp theo:
 
-1. Xác định scope và Acceptance Criteria cho TASK tiếp theo trong Phase 2.
-2. Chỉ kích hoạt TASK tiếp theo sau khi scope được thống nhất.
+1. Trình người dùng xem diff TASK-08 đã hoàn thiện và nhận phê duyệt Git tương ứng.
+2. Sau khi được duyệt, stage/commit/push theo quy trình và xác minh remote; cập nhật PASS khi đủ điều kiện.
 
 ---
 

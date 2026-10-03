@@ -1,4 +1,4 @@
-import type { Leader, ScheduleEvent } from "../types/schedule";
+import type { Leader, ScheduleEvent, WeekDay } from "../types/schedule";
 
 export const leaders: Leader[] = [
   { id: "director", name: "Nguyễn Minh An", title: "Giám đốc", initials: "NA", color: "bg-indigo-100 text-indigo-700" },
@@ -10,7 +10,7 @@ export const leaders: Leader[] = [
   { id: "deputy-06", name: "Vũ Lan Phương", title: "Phó Giám đốc", initials: "LP", color: "bg-cyan-100 text-cyan-700" },
 ];
 
-export const weekDays = [
+export const weekDays: WeekDay[] = [
   { date: "2026-10-05", day: "Thứ Hai", shortDay: "T2", dayNumber: "05" },
   { date: "2026-10-06", day: "Thứ Ba", shortDay: "T3", dayNumber: "06" },
   { date: "2026-10-07", day: "Thứ Tư", shortDay: "T4", dayNumber: "07" },
