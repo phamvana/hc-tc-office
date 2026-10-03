@@ -385,9 +385,9 @@ TASK-06  🟢 PASS
 | TASK    | Nội dung                              | Status          | Commits |
 | ------- | ------------------------------------- | --------------- | ------- |
 | TASK-07 | Leadership Schedule Page Foundation  | 🟢 PASS | Pushed; remote verified |
-| TASK-08 | Weekly Schedule Display (componentization) | 🟡 IN PROGRESS | Checks và staged review đạt; đang commit/push |
+| TASK-08 | Weekly Schedule Display (componentization) | 🟢 PASS | `ea533a0`; pushed; remote verified |
 
-TASK-07 hoàn tất với Page nền tảng dùng mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. Lint, build, Browser Verification, Knowledge Review, Documentation và Git đều đạt. Toàn bộ commit đã được push lên `origin/main`; `HEAD` trùng remote và working tree sạch. Mục tiêu, phạm vi và Acceptance Criteria của TASK-08 được người dùng duyệt ngày 2026-10-03; người dùng xác nhận bắt đầu cùng ngày và TASK-08 hiện IN PROGRESS.
+TASK-07 hoàn tất với Page nền tảng dùng mock data, 7 lãnh đạo và 16 sự kiện cho tuần mẫu 05/10–11/10/2026. TASK-08 tách lưới lịch thành component `WeeklySchedule` có typed Props, giữ nguyên dữ liệu và giao diện; lint, build, Browser Verification desktop/390×844, Documentation và Git đều đạt. Commit `ea533a0a518ae1e3a17174e7ad5bee666b722c97` đã được push lên `origin/main`, remote trùng HEAD và working tree sạch; TASK-08 PASS ngày 2026-10-03.
 
 Không sử dụng chỉ số tổng hợp không phản ánh chính xác số TASK thực tế.
 
@@ -508,6 +508,7 @@ Mọi thay đổi trạng thái quan trọng phải được ghi nhận.
 | 2026-10-03 | TASK-08 | TODO        | TODO        | Người dùng duyệt mục tiêu, phạm vi và Acceptance Criteria; chờ cho phép kích hoạt            |
 | 2026-10-03 | TASK-08 | TODO        | IN PROGRESS | Người dùng xác nhận bắt đầu TASK-08                                      |
 | 2026-10-03 | TASK-08 | IN PROGRESS | IN PROGRESS | Tách `WeeklySchedule`; checks và staged review đạt; đang commit/push |
+| 2026-10-03 | TASK-08 | IN PROGRESS | PASS | Commit `ea533a0` push thành công; remote khớp HEAD, working tree sạch |
 
 Khi có thay đổi trạng thái mới, bổ sung một dòng thay vì sửa mất lịch sử cũ.
 
@@ -671,25 +672,23 @@ Status: 🟡 IN PROGRESS
 ## Current TASK
 
 ```text
-TASK-08 — Weekly Schedule Display (componentization)
-Status: 🟡 IN PROGRESS
-Started: 2026-10-03
+Không có TASK đang hoạt động.
 ```
 
 ## Last Completed TASK
 
 ```text
-TASK-07 — Leadership Schedule Page Foundation
+TASK-08 — Weekly Schedule Display (componentization)
 
 Status: 🟢 PASS
 
-Implementation commit: 2679612
+Implementation commit: ea533a0a518ae1e3a17174e7ad5bee666b722c97
 ```
 
 ## Previous TASK
 
 ```text
-TASK-06 — Components
+TASK-07 — Leadership Schedule Page Foundation
 
 Status: 🟢 PASS
 ```
@@ -698,10 +697,10 @@ Status: 🟢 PASS
 
 ```text
 Chưa xác định.
-Chốt sau khi TASK-08 đạt PASS.
+Chốt sau khi xác định scope TASK tiếp theo trong Phase 2.
 ```
 
-TASK-06 và TASK-07 đã PASS và được đồng bộ lên `origin/main`. TASK-08 đã được duyệt và kích hoạt ngày 2026-10-03. Component `WeeklySchedule` nhận typed Props đã được triển khai; lint, build, browser desktop/390×844 và staged review đạt. Commit/push và remote verification đang thực hiện; TASK chưa PASS.
+TASK-06, TASK-07 và TASK-08 đã PASS và được đồng bộ lên `origin/main`. TASK-08 có commit `ea533a0a518ae1e3a17174e7ad5bee666b722c97`; remote đã xác minh trùng HEAD và working tree sạch. TASK tiếp theo trong Phase 2 chưa được xác định.
 
 ---
 
@@ -709,8 +708,8 @@ TASK-06 và TASK-07 đã PASS và được đồng bộ lên `origin/main`. TASK
 
 Đầu việc tiếp theo:
 
-1. Trình người dùng xem diff TASK-08 đã hoàn thiện và nhận phê duyệt Git tương ứng.
-2. Sau khi được duyệt, stage/commit/push theo quy trình và xác minh remote; cập nhật PASS khi đủ điều kiện.
+1. Xác định scope và Acceptance Criteria cho TASK tiếp theo trong Phase 2.
+2. Chỉ kích hoạt TASK kế tiếp sau khi scope được thống nhất.
 
 ---
 

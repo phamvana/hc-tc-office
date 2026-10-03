@@ -102,9 +102,9 @@ Không bắt buộc tách mọi nhánh thành file riêng. Component con chỉ �
 
 - [x] TASK-08 document và `08-progress.md` phản ánh đúng tiến độ hiện tại.
 - [x] `git diff --check` và `git diff --cached --check` đạt; staged diff gồm đúng sáu file trong phạm vi TASK-08 và đã được review.
-- [ ] Commit chỉ chứa thay đổi TASK-08 và có nội dung phù hợp.
-- [ ] Chỉ push sau khi người dùng phê duyệt rõ; xác minh remote sau push.
-- [ ] Chỉ xác lập PASS sau khi mọi Acceptance Criteria và quy trình Git hoàn tất.
+- [x] Commit `ea533a0` chỉ chứa sáu file thay đổi thuộc TASK-08.
+- [x] Commit được push lên `origin/main` sau phê duyệt; remote xác nhận cùng hash `ea533a0a518ae1e3a17174e7ad5bee666b722c97`.
+- [x] Acceptance Criteria và quy trình Git hoàn tất; TASK-08 đạt PASS.
 
 ## 6. Subtasks
 
@@ -160,15 +160,18 @@ Không phát sinh lỗi lint, build hoặc browser trong quá trình kiểm tra.
 | 2026-10-03 | Người dùng xác nhận bắt đầu; TASK-08 chuyển sang IN PROGRESS. | IN PROGRESS |
 | 2026-10-03 | Thực hiện `WeeklySchedule` typed Props và kiểu `WeekDay`; page truyền dữ liệu hiện có. | IN PROGRESS |
 | 2026-10-03 | Lint, build, browser desktop/390×844 và diff checks đạt; sáu file TASK-08 đã stage và staged diff được review. | IN PROGRESS |
+| 2026-10-03 | Commit `ea533a0` được push lên `origin/main`; remote xác nhận trùng HEAD và working tree sạch. | PASS |
 
 ## 12. Git History
 
-Chưa commit. Thay đổi đang được review; commit và push chờ phê duyệt tương ứng.
+| Commit | Message | Remote |
+| --- | --- | --- |
+| `ea533a0a518ae1e3a17174e7ad5bee666b722c97` | `feat(task-08): extract weekly schedule component` | Đã push lên `origin/main`; xác minh cùng hash |
 
 ## 13. Final Review
 
-Implementation, code review và staged diff review đã hoàn tất; lint, build, Browser Verification (desktop và 390×844), `git diff --check` và `git diff --cached --check` đạt. Đang thực hiện commit/push và sẽ xác minh remote trước khi chốt trạng thái.
+Implementation, Knowledge Review, code review, Browser Verification (desktop và 390×844), lint, build, documentation review, staged diff review và remote verification đạt. Commit `ea533a0a518ae1e3a17174e7ad5bee666b722c97` đã được xác minh trên `origin/main`; working tree sạch.
 
 ## 14. Final Status
 
-**IN PROGRESS — Được kích hoạt ngày 2026-10-03; Acceptance Criteria chưa được nghiệm thu.**
+**PASS — Acceptance Criteria đạt; commit đã push và remote đã xác minh ngày 2026-10-03.**
